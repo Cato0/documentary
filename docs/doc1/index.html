@@ -1,0 +1,1034 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Latin-ish · Test Site</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="Check the [documentation](https://docusaurus.io) for how to use Docusaurus."/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Latin-ish · Test Site"/><meta property="og:type" content="website"/><meta property="og:url" content="cato0.github.io/documentary/"/><meta property="og:description" content="Check the [documentation](https://docusaurus.io) for how to use Docusaurus."/><meta property="og:image" content="cato0.github.io/documentary/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="cato0.github.io/documentary/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/documentary/img/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="cato0.github.io/documentary/blog/atom.xml" title="Test Site Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="cato0.github.io/documentary/blog/feed.xml" title="Test Site Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/documentary/js/scrollSpy.js"></script><link rel="stylesheet" href="/documentary/css/main.css"/><script src="/documentary/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/documentary/"><img class="logo" src="/documentary/img/favicon.ico" alt="Test Site"/><h2 class="headerTitleWithLogo">Test Site</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive siteNavItemActive"><a href="/documentary/docs/doc1" target="_self">Docs</a></li><li class=""><a href="/documentary/docs/doc4" target="_self">API</a></li><li class=""><a href="/documentary/help" target="_self">Help</a></li><li class=""><a href="/documentary/blog/" target="_self">Blog</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Docusaurus</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Docusaurus</h3><ul class=""><li class="navListItem navListItemActive"><a class="navItem" href="/documentary/docs/doc1">Example Page</a></li><li class="navListItem"><a class="navItem" href="/documentary/docs/js_info">js_info</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">First Category</h3><ul class=""><li class="navListItem"><a class="navItem" href="/documentary/docs/doc2">document number 2</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Second Category</h3><ul class=""><li class="navListItem"><a class="navItem" href="/documentary/docs/doc3">This is document number 3</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">Latin-ish</h1></header><article><div><span><p>Check the <a href="https://docusaurus.io">documentation</a> for how to use Docusaurus.</p>
+<h1><a class="anchor" aria-hidden="true" id="table-of-contents"></a><a href="#table-of-contents" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Table of Contents</h1>
+<ul>
+<li><a href="#table-of-contents">Table of Contents</a></li>
+<li><a href="#npm">Npm</a>
+<ul>
+<li><a href="#create-packagejson-file">Create package.json File</a></li>
+<li><a href="#global-installation">Global installation</a></li>
+</ul></li>
+<li><a href="#script-links">Script Links</a></li>
+<li><a href="#jsdoc---documentation---dokumentation">JSDoc - Documentation - Dokumentation</a></li>
+<li><a href="#es6-features">ES6 Features</a></li>
+<li><a href="#var-vs-let-vs-const">Var vs. Let vs. Const</a>
+<ul>
+<li><a href="#var">Var</a></li>
+<li><a href="#let">Let</a></li>
+<li><a href="#const">Const</a></li>
+</ul></li>
+<li><a href="#classes">Classes</a>
+<ul>
+<li><a href="#inheritance">Inheritance</a></li>
+</ul></li>
+<li><a href="#this-bind-call-apply">This, Bind, Call, Apply</a>
+<ul>
+<li><a href="#bind">Bind</a></li>
+</ul></li>
+<li><a href="#copy">Copy</a></li>
+<li><a href="#closures">Closures</a></li>
+<li><a href="#conditionals">Conditionals</a>
+<ul>
+<li><a href="#if">If</a></li>
+<li><a href="#if-short">If Short</a></li>
+</ul></li>
+<li><a href="#loops">Loops</a>
+<ul>
+<li><a href="#for">For</a></li>
+<li><a href="#while">While</a></li>
+<li><a href="#do-while">Do while</a></li>
+</ul></li>
+<li><a href="#iterator">Iterator</a></li>
+<li><a href="#funktionen">Funktionen</a>
+<ul>
+<li><a href="#or">Or</a></li>
+<li><a href="#short-version-with-return">Short Version (with return)</a></li>
+<li><a href="#var-asd--function---vs-fucntion-asd">var asd = function () {} vs. fucntion asd () {}</a></li>
+<li><a href="#annonyme-funktion">Annonyme Funktion</a></li>
+</ul></li>
+<li><a href="#array--object--map--set">Array / Object / Map / Set</a>
+<ul>
+<li><a href="#array">Array</a></li>
+<li><a href="#object">Object</a></li>
+<li><a href="#map">Map</a></li>
+<li><a href="#set">Set</a></li>
+</ul></li>
+<li><a href="#call-by-value-vs-call-by-reference">Call by Value vs. Call by Reference</a></li>
+<li><a href="#mapping">Mapping</a>
+<ul>
+<li><a href="#short">Short:</a></li>
+<li><a href="#long">Long:</a></li>
+</ul></li>
+<li><a href="#every">Every</a></li>
+<li><a href="#join">Join</a></li>
+<li><a href="#filter">Filter</a></li>
+<li><a href="#sort-array">Sort Array</a>
+<ul>
+<li><a href="#sort-by-specific-value">Sort by specific Value</a></li>
+<li><a href="#sortierung-nach-wert">Sortierung nach Wert</a></li>
+<li><a href="#sortierung-nach-name">Sortierung nach Name</a></li>
+</ul></li>
+<li><a href="#include---import--export">Include - Import / Export</a>
+<ul>
+<li><a href="#file-1-export">File 1: Export</a></li>
+<li><a href="#export-class">Export Class</a></li>
+<li><a href="#file-2-import">File 2: Import</a></li>
+</ul></li>
+<li><a href="#math">Math</a></li>
+<li><a href="#try---catch">Try - Catch</a></li>
+<li><a href="#overloading">Overloading</a></li>
+<li><a href="#user-input">User Input</a></li>
+<li><a href="#events">Events</a></li>
+<li><a href="#callbacks">Callbacks</a>
+<ul>
+<li><a href="#call-function">Call Function</a></li>
+</ul></li>
+<li><a href="#promises">Promises</a>
+<ul>
+<li><a href="#promise-all">Promise All</a></li>
+<li><a href="#inside-a-function">Inside a Function</a></li>
+</ul></li>
+<li><a href="#async--await">Async / Await</a></li>
+<li><a href="#web-workers">Web Workers</a></li>
+<li><a href="#local-storage">Local Storage</a></li>
+<li><a href="#session-storage">Session Storage</a></li>
+<li><a href="#cookies">Cookies</a></li>
+<li><a href="#string-manipulation">String Manipulation#</a>
+<ul>
+<li><a href="#strings-with-variable">Strings with Variable</a></li>
+<li><a href="#substring">Substring</a></li>
+<li><a href="#repeat">Repeat</a></li>
+</ul></li>
+<li><a href="#clean-function-with-multiple-parameter">Clean Function with multiple Parameter</a></li>
+<li><a href="#interface">Interface</a></li>
+<li><a href="#read-and-write-files">Read and Write Files</a></li>
+<li><a href="#json">JSON</a></li>
+<li><a href="#http-request--api-call--fetch">Http-Request / API Call / Fetch</a></li>
+</ul>
+<h1><a class="anchor" aria-hidden="true" id="npm"></a><a href="#npm" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Npm</h1>
+<ul>
+<li>install globally</li>
+<li>Mac:  export NODE_PATH=/usr/lib/node_modules</li>
+<li>Windows: set global /node_modules/ folder to your environmental Variable</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="create-packagejson-file"></a><a href="#create-packagejson-file" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Create package.json File</h2>
+<ul>
+<li><p>npm init</p></li>
+<li><p>npm install <package> --save</p>
+<ul>
+<li>Writes the installed packages inside package.json</li>
+</ul></li>
+</ul>
+<p>npm install</p>
+<ul>
+<li>looks at package.json File and installs node_module dependencies</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="global-installation"></a><a href="#global-installation" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Global installation</h2>
+<p>Only use it for specific packages, that you can run with CMD, nothing that you need to import with &quot;require&quot;</p>
+<p>Path:
+Windows:
+C:\Users\andre\AppData\Roaming\npm</p>
+<pre><code class="hljs">Linux:
+</code></pre>
+<p>Examples:
+- npm install jshint -g
+- jshint <filename>
+- npm install nodemon -g
+- nodemon <filename></p>
+<ul>
+<li>npm install jshint -g</li>
+</ul>
+<h1><a class="anchor" aria-hidden="true" id="script-links"></a><a href="#script-links" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Script Links</h1>
+<p>CSS</p>
+<pre><code class="hljs">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;Test.css&quot;&gt;
+</code></pre>
+<p>Javascript</p>
+<pre><code class="hljs">&lt;script type=&quot;text/javascript&quot; src=&quot;Angular1.js&quot;&gt; &lt;/script&gt;
+</code></pre>
+<p>Jquery</p>
+<pre><code class="hljs">&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+<p>AngularJS</p>
+<pre><code class="hljs">&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js&quot;&gt; &lt;/script&gt;
+</code></pre>
+<p>BOOTSTRAP</p>
+<pre><code class="hljs">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css&quot;&gt;
+&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+<p>######################################################################################</p>
+<h1><a class="anchor" aria-hidden="true" id="jsdoc-documentation-dokumentation"></a><a href="#jsdoc-documentation-dokumentation" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>JSDoc - Documentation - Dokumentation</h1>
+<p>/**</p>
+<ul>
+<li>Returns the sum of a and b</li>
+<li>@param {number} a</li>
+<li>@param {number} b</li>
+<li>@returns {number}
+*/
+function sum(a, b) {
+return a + b;
+}</li>
+</ul>
+<h1><a class="anchor" aria-hidden="true" id="es6-features"></a><a href="#es6-features" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ES6 Features</h1>
+<ul>
+<li>let, const</li>
+<li>Arrow Functions</li>
+<li>Classes</li>
+<li>Enhanced Object Literals</li>
+<li>String interpolation</li>
+<li>Destructuring</li>
+<li>Default</li>
+<li>Spread</li>
+<li>Spread + Object LiteraArrowls</li>
+</ul>
+<h1><a class="anchor" aria-hidden="true" id="var-vs-let-vs-const"></a><a href="#var-vs-let-vs-const" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Var vs. Let vs. Const</h1>
+<p>The difference is scoping. var is scoped to the nearest function block and let is scoped to the nearest enclosing block, which can be smaller than a function block. Both are global if outside any block.</p>
+<h2><a class="anchor" aria-hidden="true" id="var"></a><a href="#var" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Var</h2>
+<h2><a class="anchor" aria-hidden="true" id="let"></a><a href="#let" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Let</h2>
+<p>let is only visible in the for() loop and var is visible to the whole function.
+for( let i = 0; i &lt; 5; i++ )</p>
+<p>Let can be used in closures</p>
+<p>The purpose of Let is to free up memory when not needed in a certain block</p>
+<h2><a class="anchor" aria-hidden="true" id="const"></a><a href="#const" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Const</h2>
+<p>unveränderbare Variable (Konstante)</p>
+<p>######################################################################################</p>
+<h1><a class="anchor" aria-hidden="true" id="classes"></a><a href="#classes" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Classes</h1>
+<pre><code class="hljs">var apple = {
+    type: &quot;macintosh&quot;,
+    color: &quot;red&quot;,
+    
+    getInfo: function () {
+        return this.color + ' ' + this.type + ' apple';
+    }
+}
+
+class Rectangle {
+constructor(height, width) {
+    this.height = height;
+    this.width = width;
+}
+}
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="inheritance"></a><a href="#inheritance" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Inheritance</h2>
+<pre><code class="hljs">Animal = function (age, name) {
+    this.age = age;
+    this.name = name;
+};
+
+Cat = function (age, name, catFood) {
+    Animal.call(this, age, name);
+    this.catFood = catFood;
+};
+</code></pre>
+<p>Funktionen können auch im Konstruktor sein oder außerhab mit „prototype“</p>
+<pre><code class="hljs">Cat.prototype.walk = function () {
+    # do something
+}
+</code></pre>
+<p>Für inheritance braucht man dann:</p>
+<pre><code class="hljs">Cat.prototype = Object.create(Animal.prototype);
+</code></pre>
+<p>######################################################################################</p>
+<h1><a class="anchor" aria-hidden="true" id="this-bind-call-apply"></a><a href="#this-bind-call-apply" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>This, Bind, Call, Apply</h1>
+<pre><code class="hljs">var context = {
+    name: &quot;Tom&quot;  
+};
+
+function func1(param1, param2)
+{  
+    return param1 +' '+ this.name + param2;   
+}
+
+// Bind
+var neueFunktion = func1.bind(context, &quot;Hallo&quot;, &quot;!&quot;);
+console.log( neueFunktion() );
+
+//Example:
+
+var funcs = {};
+
+for (var i = 0; i &lt; 3; i++) {
+
+  var t = 5 + i;
+
+  funcs[i] = function(x) {
+    
+    console.log('Binded value: ' + x);      // Binded
+    console.log('Non binded value: ' + t);  // Not Binded
+    
+  }.bind(this, i);
+}
+for (var j = 0; j &lt; 3; j++) {
+  funcs[j]();
+}
+
+// Call
+console.log( func1.call(context, &quot;Hallo&quot;, &quot;!&quot;) );
+
+// Example:
+
+var funcs = {};
+
+for (var i = 0; i &lt; 3; i++) {
+
+  var t = 5 + i;
+
+  funcs[i] = function(x) {
+    
+    console.log('Binded value: ' + x);      // Binded
+    console.log('Non binded value: ' + t);  // Not Binded
+    
+  }.call(this, i);
+}
+
+// Apply
+console.log( func1.apply(context, [&quot;Hallo&quot;, &quot;!&quot;]) );
+
+// Ausgabe: Hallo Tom!
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="bind"></a><a href="#bind" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Bind</h2>
+<p>Example:</p>
+<p>Zähle von 1-10 in 10 Sekunden</p>
+<pre><code class="hljs">function count ( i, max= 10) {
+
+    console.log(i);
+    if( i++ &gt;= max) return ;
+    setTimeout(count.bind(this, i), 1000);
+    //setTimeout( function() { count(i); }, 1000 );
+}
+
+/* 
+count.bind(this, i);
+=&gt;
+function () {
+    count(i);
+}
+*/
+
+count(0);
+</code></pre>
+<p>######################################################################################</p>
+<h1><a class="anchor" aria-hidden="true" id="copy"></a><a href="#copy" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Copy</h1>
+<p>Create Copy:</p>
+<pre><code class="hljs">var q = {age:10, 'profile.country': 'india'};
+var duplicateQ = Object.assign({}, q);
+delete duplicateQ['profile.country'];
+</code></pre>
+<p>OTHERWISE this Error can occur:</p>
+<pre><code class="hljs">var q = dublicateQ;             # This doesnt create a copy, only a reference!
+delete dublicateQ.country;      # This thereby also removes the q.country not only dublicateQ.country
+</code></pre>
+<h1><a class="anchor" aria-hidden="true" id="closures"></a><a href="#closures" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Closures</h1>
+<p>Closure ist ein abgeschlossener Bereich, Funktion innerhalb einer Funktion, der Referenzen behält und zurückgegeben werden kann.</p>
+<p>&quot;A closure in JavaScript is like keeping a copy of all the local variables, just as they were when a function exited.&quot;</p>
+<pre><code class="hljs">https://stackoverflow.com/questions/111102/how-do-javascript-closures-work?rq=1
+
+var gLogNumber, gIncreaseNumber, gSetNumber;  // nicht zwingend nötig aber hilfreich um zu erläutern, dass es nach setupSomeGlobals() globale Variablen sind
+
+function setupSomeGlobals() {
+  // Local variable that ends up within closure
+  var num = 42;
+  // Store some references to functions as global variables
+  gLogNumber = function() { console.log(num); }
+  gIncreaseNumber = function() { num++; }
+  gSetNumber = function(x) { num = x; }
+}
+
+setupSomeGlobals();
+gIncreaseNumber();
+gLogNumber();       // 43
+gSetNumber(5);
+gLogNumber();       // 5
+
+var oldLog = gLogNumber;
+
+setupSomeGlobals();
+gLogNumber(); // 42
+
+oldLog(); // 5
+</code></pre>
+<p>######################################################################################</p>
+<h1><a class="anchor" aria-hidden="true" id="conditionals"></a><a href="#conditionals" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Conditionals</h1>
+<h2><a class="anchor" aria-hidden="true" id="if"></a><a href="#if" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>If</h2>
+<pre><code class="hljs">if (x == 2) {
+    doSomething();
+}
+else if {
+    doElseIf();
+}
+else {
+    doElse();
+}
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="if-short"></a><a href="#if-short" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>If Short</h2>
+<pre><code class="hljs">if (x == 2) { return 1; }
+else        { return 2; }
+</code></pre>
+<p>Same thing in Short:</p>
+<pre><code class="hljs">(x == 2) ? 1 : 2;
+</code></pre>
+<p>######################################################################################</p>
+<h1><a class="anchor" aria-hidden="true" id="loops"></a><a href="#loops" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Loops</h1>
+<h2><a class="anchor" aria-hidden="true" id="for"></a><a href="#for" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>For</h2>
+<pre><code class="hljs">for (var i = 0; i &lt; 5; i++) {
+    console.log(i);
+}
+
+
+for (var i in array) {
+    console.log(array[i]);
+}
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="while"></a><a href="#while" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>While</h2>
+<pre><code class="hljs">while (x &gt; 0) {
+    console.log(x);
+    x--;
+}
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="do-while"></a><a href="#do-while" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Do while</h2>
+<pre><code class="hljs">do {                    # Always calls the function once
+    console.log(x);
+    x--;
+} while (x &gt; 10);
+</code></pre>
+<h1><a class="anchor" aria-hidden="true" id="iterator"></a><a href="#iterator" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Iterator</h1>
+<pre><code class="hljs">const makeIterator = (someArray) =&gt; {
+    let nextIndex = 0;
+    return {
+    next: () =&gt; {
+        if (nextIndex &lt; someArray.length) {
+        return {
+            value: someArray[nextIndex++],
+            done: false
+        };
+        }
+        return {
+        done: true
+        };
+    }
+    };
+}
+
+const iterator = makeIterator([1, 2, 3]);
+
+let result = iterator.next();
+console.log(result);    // 1
+</code></pre>
+<p>######################################################################################</p>
+<h1><a class="anchor" aria-hidden="true" id="funktionen"></a><a href="#funktionen" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Funktionen</h1>
+<pre><code class="hljs">var log = function(message) {
+    console.log(message);
+}
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="or"></a><a href="#or" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Or</h2>
+<pre><code class="hljs">var doLog2 = (message) =&gt; {
+    return console.log(message);
+}
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="short-version-with-return"></a><a href="#short-version-with-return" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Short Version (with return)</h2>
+<pre><code class="hljs">var doLog = (message) =&gt; console.log(message);
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="var-asd-function-vs-fucntion-asd"></a><a href="#var-asd-function-vs-fucntion-asd" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>var asd = function () {}  vs.  fucntion asd () {}</h2>
+<ol>
+<li>Is a Variable and can only be called after it has been declared (underneath)</li>
+</ol>
+<p>Code:</p>
+<pre><code class="hljs">asd();  # Error
+var asd = function () {}
+asd();  # Works
+</code></pre>
+<ol start="2">
+<li>Is already visible even above its definition</li>
+</ol>
+<p>Code:</p>
+<pre><code class="hljs">asd(); # Works
+function asd () {}
+asd(); # Works
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="annonyme-funktion"></a><a href="#annonyme-funktion" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Annonyme Funktion</h2>
+<pre><code class="hljs">function () {
+# doSomething();
+}
+</code></pre>
+<ul>
+<li>Funktion ohne Namen die sofort und nur einmal ausgeführt wird</li>
+<li>Kann so als Parameter übergeben werden</li>
+</ul>
+<p>######################################################################################</p>
+<h1><a class="anchor" aria-hidden="true" id="array-object-map-set"></a><a href="#array-object-map-set" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Array / Object / Map  / Set</h1>
+<h2><a class="anchor" aria-hidden="true" id="array"></a><a href="#array" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Array</h2>
+<pre><code class="hljs">var arr = [1, 2, 3];
+
+arr.forEach ( (num) =&gt; {
+    console.log(num);
+});
+
+arr.push(1);
+
+arr.pop();  // Delete Last Element
+
+arr.splice( start, numOfDeletedElements, replacementObject);
+arr.splice( 0 , 1);     // Delete First Element
+arr.splice( 1 , 2);     // Delete Second and Third Element 
+arr.splice( 0, 1, 4);   // Deletes and replaces the first Element with a 4
+
+arr.slice(start, end);
+arr = arr.slice(2, 4);  // Returns the 3. and 4. Element of the Array
+
+arr.sort(); // Siehe unten &quot;Sort-Array&quot; für weitere Möglichkeiten
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="object"></a><a href="#object" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Object</h2>
+<pre><code class="hljs">var object = { 
+    x : 5,
+    testFunc : function() { console.log(&quot;test Now&quot;); },
+    y : 8
+};
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="map"></a><a href="#map" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Map</h2>
+<pre><code class="hljs">var map1 = new Map();
+map1.set('dog', 'woof');    // Key = 'dog', Value = 'woof'
+map1.set('cat', 'meow');
+
+map1.get('dog');   // returns 'woof'. Get the Value of the Key 'dog'
+
+console.log( map1.key );    // Show all available Keys
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="set"></a><a href="#set" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Set</h2>
+<p>Sets cannot contain 2 identical Variables at the same time.</p>
+<pre><code class="hljs">var set1 = new Set([1, 2, 3]);
+
+set1.add(4);    // Adds the Value 4
+set1.delete(2); // Finds and deletes the Value 2, no matter where it is
+set1.clear();   // Delete all Values
+set1.size;
+
+Set to Array:
+
+1. arr = [...set1];
+2. arr = Array.from(set1);
+</code></pre>
+<p>######################################################################################</p>
+<h1><a class="anchor" aria-hidden="true" id="call-by-value-vs-call-by-reference"></a><a href="#call-by-value-vs-call-by-reference" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Call by Value vs. Call by Reference</h1>
+<p>Call by Reference in Javascript only works with Arrays or Objects.</p>
+<p>Normal Variables get treated with Call by Value and won't keep a change that is made inside a function.</p>
+<p>######################################################################################</p>
+<h1><a class="anchor" aria-hidden="true" id="mapping"></a><a href="#mapping" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Mapping</h1>
+<p>=&gt; do something for all Elements inside an Array</p>
+<pre><code class="hljs">var array1 = [1, 4, 9, 16];
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="short"></a><a href="#short" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Short:</h2>
+<pre><code class="hljs">const map1 = array1.map( (x) =&gt; x + 2);
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="long"></a><a href="#long" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Long:</h2>
+<pre><code class="hljs">const map1 = array1.map( function (x) {
+    return x+2;
+});
+
+console.log(map1);  # =&gt; [2, 8, 18, 32]
+</code></pre>
+<p>Sqrt on every Element of an Array:</p>
+<pre><code class="hljs">map2 = array1.map(Math.sqrt);
+</code></pre>
+<p>######################################################################################</p>
+<h1><a class="anchor" aria-hidden="true" id="every"></a><a href="#every" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Every</h1>
+<pre><code class="hljs">function isBelowThreshold(currentValue) {
+return currentValue &lt; 40;
+}
+
+var array1 = [1, 30, 39, 29, 10, 13];
+
+console.log(array1.every(isBelowThreshold));
+# expected output: true
+</code></pre>
+<p>######################################################################################</p>
+<h1><a class="anchor" aria-hidden="true" id="join"></a><a href="#join" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Join</h1>
+<pre><code class="hljs">var elements = ['Fire', 'Wind', 'Rain'];
+
+console.log(elements.join());
+# expected output: Fire,Wind,Rain
+
+console.log(elements.join(''));
+# expected output: FireWindRain
+
+console.log(elements.join('-'));
+# expected output: Fire-Wind-Rain
+</code></pre>
+<p>######################################################################################</p>
+<h1><a class="anchor" aria-hidden="true" id="filter"></a><a href="#filter" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Filter</h1>
+<pre><code class="hljs">var words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+
+const result = words.filter(word =&gt; word.length &gt; 6);
+
+console.log(result);
+# expected output: Array [&quot;exuberant&quot;, &quot;destruction&quot;, &quot;present&quot;]
+</code></pre>
+<p>######################################################################################</p>
+<h1><a class="anchor" aria-hidden="true" id="sort-array"></a><a href="#sort-array" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Sort Array</h1>
+<pre><code class="hljs">var array = [2, 5, 1];
+
+array.sort();               # =&gt; [1, 2, 5]
+array.sort( (a,b) =&gt; a+b ); # =&gt; [5, 2, 1]
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="sort-by-specific-value"></a><a href="#sort-by-specific-value" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Sort by specific Value</h2>
+<pre><code class="hljs">var items = [
+{ name: 'Edward', value: 21 },
+{ name: 'Sharpe', value: 37 },
+{ name: 'And', value: 45 },
+{ name: 'The', value: -12 },
+{ name: 'Magnetic' },
+{ name: 'Zeros', value: 37 }
+];
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="sortierung-nach-wert"></a><a href="#sortierung-nach-wert" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Sortierung nach Wert</h2>
+<pre><code class="hljs">items.sort(function (a, b) {
+if (a.value &gt; b.value) {
+    return 1;
+}
+if (a.value &lt; b.value) {
+    return -1;
+}
+# a muss gleich b sein
+return 0;
+});
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="sortierung-nach-name"></a><a href="#sortierung-nach-name" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Sortierung nach Name</h2>
+<pre><code class="hljs">items.sort(function(a, b) {
+    var nameA = a.name.toUpperCase(); # ignore upper and lowercase
+    var nameB = b.name.toUpperCase(); # ignore upper and lowercase
+    if (nameA &lt; nameB) {
+        return -1;
+    }
+    if (nameA &gt; nameB) {
+        return 1;
+    }
+
+    # namen müssen gleich sein
+    return 0;
+});
+</code></pre>
+<p>######################################################################################</p>
+<h1><a class="anchor" aria-hidden="true" id="include-import-export"></a><a href="#include-import-export" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Include - Import / Export</h1>
+<h2><a class="anchor" aria-hidden="true" id="file-1-export"></a><a href="#file-1-export" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>File 1: Export</h2>
+<pre><code class="hljs">module.exports = {
+
+    x: 10,
+    
+    testFunction: function () {
+        return 1;
+    },
+
+}
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="export-class"></a><a href="#export-class" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Export Class</h2>
+<pre><code class="hljs">Class Item {
+    constructor () {
+        console.log(&quot;hello&quot;);
+    }
+}
+
+module.exports = Item;
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="file-2-import"></a><a href="#file-2-import" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>File 2: Import</h2>
+<pre><code class="hljs">var file = require('./fileOne');    # This file is in the same folder
+
+file.testFunction();
+</code></pre>
+<p>######################################################################################</p>
+<h1><a class="anchor" aria-hidden="true" id="math"></a><a href="#math" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Math</h1>
+<pre><code class="hljs">Math.sqrt(4)
+&gt; 2
+
+Math.max(...[1, 4, 3])
+&gt; 4
+</code></pre>
+<p>######################################################################################</p>
+<h1><a class="anchor" aria-hidden="true" id="try-catch"></a><a href="#try-catch" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Try - Catch</h1>
+<pre><code class="hljs">try {
+    someFunction(); // If this function would return an error, it switchest o the catch
+}
+catch (err) {
+    console.log(err);
+}
+</code></pre>
+<p>######################################################################################</p>
+<h1><a class="anchor" aria-hidden="true" id="overloading"></a><a href="#overloading" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Overloading</h1>
+<pre><code class="hljs">function CatStrings(p1, p2, p3)
+{
+var s = p1;
+if(typeof p2 !== &quot;undefined&quot;) {s += p2;}
+if(typeof p3 !== &quot;undefined&quot;) {s += p3;}
+return s;
+};
+
+CatStrings(&quot;one&quot;);        // result = one
+CatStrings(&quot;one&quot;,2);      // result = one2
+CatStrings(&quot;one&quot;,2,true); // result = one2true
+</code></pre>
+<p>######################################################################################</p>
+<h1><a class="anchor" aria-hidden="true" id="user-input"></a><a href="#user-input" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>User Input</h1>
+<pre><code class="hljs">var stdin = process.openStdin();
+
+stdin.addListener(&quot;data&quot;, function(d) {
+
+console.log(&quot;you entered: [&quot; + d.toString().trim() + &quot;]&quot;);
+
+});
+</code></pre>
+<p>######################################################################################</p>
+<h1><a class="anchor" aria-hidden="true" id="events"></a><a href="#events" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Events</h1>
+<p>Dom on-Event handlers:</p>
+<pre><code class="hljs">var boxes = document.getElementsByClassName(&quot;box&quot;);
+
+for( var i = 0; i &lt; boxes.length; i++) {
+    boxes[i].addEventListener(&quot;mousemove&quot; , function(e) {
+        console.log(this);
+        this.style.backgroundColor = &quot;green&quot;;
+    });
+}
+</code></pre>
+<ul>
+<li>Mousemove</li>
+<li>Mouseover</li>
+<li>Mouseout</li>
+<li>Click</li>
+<li>Resize</li>
+</ul>
+<p>Event Listener übernimmt die Variable nicht, ist immer der letzte Wert aus der schleife</p>
+<p>-&gt; in Funktionen Kapseln (Encapsule)</p>
+<p>e.g.</p>
+<pre><code class="hljs">(function(i) {
+
+    google.maps.event.addListener(marker[i], 'click', function () {    
+        info.open($scope.map,this);
+    });
+}(i));
+
+// eventuell mit .bind(this, i) machen???
+</code></pre>
+<p>######################################################################################</p>
+<h1><a class="anchor" aria-hidden="true" id="callbacks"></a><a href="#callbacks" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Callbacks</h1>
+<p>Funktion als Parameter, damit die zweite Funktion synchron nach der ersten kommt. Hilft z.B. bei Angular/NodeJS, wo alles asynchrony läuft.</p>
+<pre><code class="hljs">var functionOne (callback) {
+
+doSomethingFirst();
+if (callback) callback();
+}
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="call-function"></a><a href="#call-function" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Call Function</h2>
+<pre><code class="hljs">functionOne( function () {
+
+doSomethingAfter();
+
+})
+
+if(callback) {
+callback();        # Callback Funktion ausführen, wenn man hier ist und
+</code></pre>
+<p>######################################################################################</p>
+<h1><a class="anchor" aria-hidden="true" id="promises"></a><a href="#promises" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Promises</h1>
+<ul>
+<li>Für asynchrones Verhalten, damit kein Callback-Hell entsteht</li>
+<li>Quasi Callbacks mit return-Funktion</li>
+<li>Wenn man beim resolve angekommen ist, dann kommt alles nach dem .then hinter dem Promise. Wie ein return mit Rückgabeparameter</li>
+</ul>
+<p>-&gt; Siehe 1. Javascript/Async/Promises.js</p>
+<pre><code class="hljs">function func1 () {
+    return new Promise((resolve, reject) =&gt; {
+        setTimeout(() =&gt; {
+            // Do Something
+            resolve(someObject);
+        }, 1000);
+    });
+}
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="promise-all"></a><a href="#promise-all" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Promise All</h2>
+<p>Creates an Array of Promises, which all work simultaniously, but then waits until all.
+So you can call a function after all Promises finished.
+This is not all Promises working one after another!</p>
+<pre><code class="hljs">function eins (x) {
+    return new Promise ( (res, rej) =&gt; {
+        setTimeout ( () =&gt; { console.log(&quot;eins&quot;);    res(); }, 2000);
+    } );
+}
+function zwei (x) {
+    return new Promise ( (res, rej) =&gt; {
+        setTimeout ( () =&gt; { console.log(&quot;zwei&quot;);    res(); }, 100);
+    } );
+}
+function drei (x) {
+    return new Promise ( (res, rej) =&gt; {
+        setTimeout ( () =&gt; { console.log(&quot;drei&quot;);    res(); }, 1000);
+    } );
+}
+
+promises.push(eins());
+promises.push(zwei());
+promises.push(drei());
+
+Promise.all( [eins, zwei, drei] ).then( (m) =&gt; { console.log(&quot;End&quot;); console.log(m); } );
+// Output:  zwei, drei, eins
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="inside-a-function"></a><a href="#inside-a-function" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Inside a Function</h2>
+<p>var f1 = function () {</p>
+<pre><code class="hljs">return new Promise ( (res) =&gt; {
+    // ...
+});
+</code></pre>
+<p>}</p>
+<p>######################################################################################</p>
+<h1><a class="anchor" aria-hidden="true" id="async-await"></a><a href="#async-await" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Async / Await</h1>
+<p>Async Function can say &quot;await&quot;, which recognizes that an function is coming up that takes some time and that the code should be waiting for. Everything after the await therefore will be called after the  function of await.</p>
+<pre><code class="hljs">async function test1 () {
+    await async1();
+    await async2();
+    testFunction();
+}
+
+function async1 () {
+    return new Promise((resolve, reject) =&gt; {
+        setTimeout(() =&gt; {
+            console.log(&quot;async1&quot;);
+            resolve('resolve 1');
+        }, 2000);
+    });
+}
+
+function async2 () {
+    return new Promise((resolve, reject) =&gt; {
+        setTimeout(() =&gt; {
+            console.log(&quot;async2&quot;);
+            resolve('resolve 2');
+        }, 1000);
+    });
+}
+
+function testFunction () {
+    console.log(&quot;testFunction&quot;);
+}
+
+test1();
+</code></pre>
+<p>E.g. Count up to 10 in 10 Seconds:</p>
+<pre><code class="hljs">function plus1 (x) {
+    return new Promise ( (res, rej) =&gt; { 
+    setTimeout ( () =&gt; { console.log(x); res(x+1);  }, 1000);
+    } );
+}
+
+async function do1 ()  {
+
+    var now = 1;
+    for (var i = 1; i &lt; 10; i++) {
+        now = await plus1(now);
+    }
+    console.log(now);
+}
+
+do1();
+</code></pre>
+<p>######################################################################################</p>
+<h1><a class="anchor" aria-hidden="true" id="web-workers"></a><a href="#web-workers" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Web Workers</h1>
+<ul>
+<li>Real Multithreading for Javascript. One Thread for each Core</li>
+<li>Funktioniert nicht in Chrome nur Firefox</li>
+</ul>
+<p>Create Worker:</p>
+<pre><code class="hljs">var worker1 = new Worker('worker.js');
+
+(new JS file – worker.js):
+
+onmessage = function(e) {
+    if(e.data != undefined) {
+    console.log(&quot;hello: &quot;+e.data*2 );
+    postMessage({  result: e.data*2 });
+    }
+};
+</code></pre>
+<p>Post Message:</p>
+<pre><code class="hljs">worker1.postMessage(2);
+</code></pre>
+<p>Was tun: onMessage -&gt; Catch Result:</p>
+<pre><code class="hljs">worker1.onmessage = function(e) {
+console.log(&quot;Result: &quot;+e.data.result);
+};
+
+worker1.terminate();    # close worker from Main Thread
+close();                # worker closes itself
+</code></pre>
+<p>######################################################################################</p>
+<h1><a class="anchor" aria-hidden="true" id="local-storage"></a><a href="#local-storage" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Local Storage</h1>
+<pre><code class="hljs">localStorage.setItem(&quot;r&quot;,&quot;Rot&quot;);    # Key = &quot;r&quot;; Value = &quot;Rot&quot;
+localStorage.r;                     # Gibt Value aus der den Key &quot;r&quot; hat
+localStorage.getItem(&quot;r&quot;);          # wie ein drüber gibt Rot aus
+localStorage.key(0);                # Gibt Key aus, der an der Stelle 0 im Array
+
+for (i=0; i&lt;localStorage.length; i++) {
+    alert(localStorage.getItem(localStorage.key(i)));   
+    # Geht durch gesamten LocalStore und gibt alle Values aus
+} 
+
+localStorage.clear();
+</code></pre>
+<h1><a class="anchor" aria-hidden="true" id="session-storage"></a><a href="#session-storage" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Session Storage</h1>
+<ul>
+<li>TODO</li>
+</ul>
+<h1><a class="anchor" aria-hidden="true" id="cookies"></a><a href="#cookies" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Cookies</h1>
+<p>Cookies are stored with key=value</p>
+<pre><code class="hljs">document.cookie = &quot;key=value&quot;;
+</code></pre>
+<p>Get Coockie by Key Name:</p>
+<pre><code class="hljs">function getCookie(name) {
+    var value = &quot;; &quot; + document.cookie;
+    var parts = value.split(&quot;; &quot; + name + &quot;=&quot;);
+    if (parts.length == 2) return parts.pop().split(&quot;;&quot;).shift();
+}
+</code></pre>
+<p>Delete:</p>
+<pre><code class="hljs">// Delete only with Name
+function delete_cookie( name ) {
+    document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+}
+
+// Delete with Name, Path and Domain
+function delete_cookie2( name, path, domain ) {
+    if( get_cookie( name ) ) {
+    document.cookie = name + &quot;=&quot; +
+        ((path) ? &quot;;path=&quot;+path:&quot;&quot;)+
+        ((domain)?&quot;;domain=&quot;+domain:&quot;&quot;) +
+        &quot;;expires=Thu, 01 Jan 1970 00:00:01 GMT&quot;;
+    }
+}
+</code></pre>
+<p>######################################################################################</p>
+<h1><a class="anchor" aria-hidden="true" id="string-manipulation"></a><a href="#string-manipulation" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>String Manipulation#</h1>
+<h2><a class="anchor" aria-hidden="true" id="strings-with-variable"></a><a href="#strings-with-variable" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Strings with Variable</h2>
+<pre><code class="hljs">var test = 2
+console.log(`what ${test}`);
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="substring"></a><a href="#substring" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Substring</h2>
+<pre><code class="hljs">var str = &quot;abc&quot;;
+
+# Param. 1 = Anfangsstelle des Substrings  # Param. 2 = Länge des Substrings
+var substr = str.substr(1,2); #  =&gt; bc
+var substr = str.substr(0,1); #  =&gt; a
+var substr = str.substr(0,2); #  =&gt; ab
+var substr = str.substr(2,1); #  =&gt; c
+var substr = str.substr(1,1); #  =&gt; b
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="repeat"></a><a href="#repeat" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Repeat</h2>
+<pre><code class="hljs">var x = &quot;1&quot;.repeat(3);  # =&gt; &quot;111&quot;
+</code></pre>
+<p>######################################################################################</p>
+<h1><a class="anchor" aria-hidden="true" id="clean-function-with-multiple-parameter"></a><a href="#clean-function-with-multiple-parameter" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Clean Function with multiple Parameter</h1>
+<pre><code class="hljs">let drawPoint = (a, b, c, d) =&gt; {
+    ...
+}
+INSTEAD
+
+drawPoint({
+    a:1,
+    b:2,
+    c:3,
+    d:4
+})
+</code></pre>
+<p>######################################################################################</p>
+<h1><a class="anchor" aria-hidden="true" id="interface"></a><a href="#interface" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Interface</h1>
+<p>USE INTERFACE (Always use first Capital letter for Interfaces)</p>
+<pre><code class="hljs">interface Point {
+    a: number,
+    b: number,
+    c: number,
+    d: number
+}
+</code></pre>
+<p>######################################################################################</p>
+<h1><a class="anchor" aria-hidden="true" id="read-and-write-files"></a><a href="#read-and-write-files" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Read and Write Files</h1>
+<p>TODO</p>
+<p>######################################################################################</p>
+<h1><a class="anchor" aria-hidden="true" id="json"></a><a href="#json" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>JSON</h1>
+<pre><code class="hljs">JSON.stringify(data)    # turns a JavaScript object into JSON text and stores that JSON text in a string
+
+JSON.parse(data)        # turns a string of JSON text into a JavaScript object 
+</code></pre>
+<p>######################################################################################</p>
+<h1><a class="anchor" aria-hidden="true" id="http-request-api-call-fetch"></a><a href="#http-request-api-call-fetch" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Http-Request / API Call / Fetch</h1>
+<ol>
+<li><p>Ajax (Http GET, Http POST)</p>
+<p>const Http = new XMLHttpRequest();
+const url='<a href="https://jsonplaceholder.typicode.com/posts'">https://jsonplaceholder.typicode.com/posts'</a>;
+Http.open(&quot;GET&quot;, url);
+Http.send();</p>
+<p>Http.onreadystatechange = (e) =&gt; {
+console.log(Http.responseText)
+}</p>
+<ul>
+<li>geht auch mit JQuery</li>
+</ul>
+<p>$.get ,  $.post</p></li>
+<li><p>fetch</p>
+<p>const url = '<a href="https://jsonplaceholder.typicode.com/post'">https://jsonplaceholder.typicode.com/post'</a>;</p>
+<p>fetch(url)
+.then( (data) =&gt; { return data.json()} )
+.then( res ) =&gt; { console.log(res) }</p></li>
+<li><p>Axios
+...</p></li>
+<li><p>Angular HttpClient</p></li>
+</ol>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-next button" href="/documentary/docs/js_info"><span>js_info</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#create-packagejson-file">Create package.json File</a></li><li><a href="#global-installation">Global installation</a></li><li><a href="#var">Var</a></li><li><a href="#let">Let</a></li><li><a href="#const">Const</a></li><li><a href="#inheritance">Inheritance</a></li><li><a href="#bind">Bind</a></li><li><a href="#if">If</a></li><li><a href="#if-short">If Short</a></li><li><a href="#for">For</a></li><li><a href="#while">While</a></li><li><a href="#do-while">Do while</a></li><li><a href="#or">Or</a></li><li><a href="#short-version-with-return">Short Version (with return)</a></li><li><a href="#var-asd-function-vs-fucntion-asd">var asd = function () {}  vs.  fucntion asd () {}</a></li><li><a href="#annonyme-funktion">Annonyme Funktion</a></li><li><a href="#array">Array</a></li><li><a href="#object">Object</a></li><li><a href="#map">Map</a></li><li><a href="#set">Set</a></li><li><a href="#short">Short:</a></li><li><a href="#long">Long:</a></li><li><a href="#sort-by-specific-value">Sort by specific Value</a></li><li><a href="#sortierung-nach-wert">Sortierung nach Wert</a></li><li><a href="#sortierung-nach-name">Sortierung nach Name</a></li><li><a href="#file-1-export">File 1: Export</a></li><li><a href="#export-class">Export Class</a></li><li><a href="#file-2-import">File 2: Import</a></li><li><a href="#call-function">Call Function</a></li><li><a href="#promise-all">Promise All</a></li><li><a href="#inside-a-function">Inside a Function</a></li><li><a href="#strings-with-variable">Strings with Variable</a></li><li><a href="#substring">Substring</a></li><li><a href="#repeat">Repeat</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/documentary/" class="nav-home"><img src="/documentary/img/favicon.ico" alt="Test Site" width="66" height="58"/></a><div><h5>Docs</h5><a href="/documentary/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/documentary/docs/en/doc2.html">Guides (or other categories)</a><a href="/documentary/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/documentary/en/users.html">User Showcase</a><a href="https://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/documentary/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://opensource.facebook.com/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/documentary/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2019 Your Name or Your Company Name</section></footer></div></body></html>
