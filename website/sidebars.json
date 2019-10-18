@@ -1,10 +1,22 @@
 {
   "docs": {
-    "Docusaurus": ["doc1", "js_info"],
-    "First Category": ["doc2"],
-    "Second Category": ["doc3"]
+    "Javascript": ["Angular2++", "AngularJS", "Javascript", "jQuery", "React", "Typescript", "Unit_Tests"],
+    "Python": ["Python", "Anaconda","Jupyter", "Django", "Matplotlib", "Numpy","Scipy"],
+    "CSS": ["CSS", "Bootstrap", "MaterialUi", "Sass"],
+    "Java": ["Java", "SpringBoot"],
+    "C++": ["C++"],
+    "C#": ["C#"],
+    "Php": ["Php"],
+    "Database" : ["Database", "SQLvsNoSQL", "SQL"],
+    "Machine Learning" : ["MachineLearning", "Tensorflow"],
+    "OS" : ["Linux", "Mac", "Windows", "WindowsBat"],
+    "HowTos" : ["Docusaurus", "Email", "ESLint", "Git", "Markdown", "VSCode", "GithubPages"],
+    "Sonstiges" : ["RegularExpressions", "DesignPattern", "Docker", "Latex", "Network", "Scrum", "InterviewQuestions", "StickFormatieren"]
+
   },
   "docs-other": {
     "First Category": ["doc4", "doc5"]
   }
 }
+
+

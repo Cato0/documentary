@@ -1,4 +1,5 @@
 {
+  "homepage": "https://cato0.github.io/documentary/",
   "scripts": {
     "examples": "docusaurus-examples",
     "start": "docusaurus-start",
@@ -6,9 +7,12 @@
     "publish-gh-pages": "docusaurus-publish",
     "write-translations": "docusaurus-write-translations",
     "version": "docusaurus-version",
-    "rename-version": "docusaurus-rename-version"
+    "rename-version": "docusaurus-rename-version",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
-    "docusaurus": "^1.13.0"
+    "docusaurus": "^1.13.0",
+    "gh-pages": "^2.1.1"
   }
 }

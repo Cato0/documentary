@@ -1,3 +1,9 @@
+---
+id: Javascript
+title: Javascript
+sidebar_label: Javascript
+---
+
 # Table of Contents
 
 - [Table of Contents](#table-of-contents)
@@ -5,6 +11,7 @@
   - [Create package.json File](#create-packagejson-file)
   - [Global installation](#global-installation)
 - [Script Links](#script-links)
+- [JSDoc - Documentation - Dokumentation](#jsdoc---documentation---dokumentation)
 - [ES6 Features](#es6-features)
 - [Var vs. Let vs. Const](#var-vs-let-vs-const)
   - [Var](#var)
@@ -55,12 +62,15 @@
 - [User Input](#user-input)
 - [Events](#events)
 - [Callbacks](#callbacks)
+  - [Call Function](#call-function)
 - [Promises](#promises)
   - [Promise All](#promise-all)
   - [Inside a Function](#inside-a-function)
 - [Async / Await](#async--await)
 - [Web Workers](#web-workers)
 - [Local Storage](#local-storage)
+- [Session Storage](#session-storage)
+- [Cookies](#cookies)
 - [String Manipulation#](#string-manipulation)
   - [Strings with Variable](#strings-with-variable)
   - [Substring](#substring)
