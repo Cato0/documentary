@@ -1,0 +1,509 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Docker · myGithub</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="# HOW TO DOCKER"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Docker · myGithub"/><meta property="og:type" content="website"/><meta property="og:url" content="cato0.github.io/documentary/"/><meta property="og:description" content="# HOW TO DOCKER"/><meta property="og:image" content="cato0.github.io/documentary/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="cato0.github.io/documentary/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/documentary/img/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="cato0.github.io/documentary/blog/atom.xml" title="myGithub Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="cato0.github.io/documentary/blog/feed.xml" title="myGithub Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/documentary/js/scrollSpy.js"></script><link rel="stylesheet" href="/documentary/css/main.css"/><script src="/documentary/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/documentary/"><img class="logo" src="/documentary/img/favicon.ico" alt="myGithub"/><h2 class="headerTitleWithLogo">myGithub</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/documentary/docs/HowTos/Docusaurus" target="_self">Docs</a></li><li class="siteNavGroupActive"><a href="/documentary/docs/HowTos/Docusaurus" target="_self">API</a></li><li class=""><a href="/documentary/help" target="_self">Help</a></li><li class=""><a href="/documentary/blog/" target="_self">Blog</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Sonstiges</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Javascript<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/documentary/docs/Javascript/Angular2++">Angular2++</a></li><li class="navListItem"><a class="navItem" href="/documentary/docs/Javascript/AngularJS">AngularJS</a></li><li class="navListItem"><a class="navItem" href="/documentary/docs/Javascript/Javascript">Javascript</a></li><li class="navListItem"><a class="navItem" href="/documentary/docs/Javascript/jQuery">jQuery</a></li><li class="navListItem"><a class="navItem" href="/documentary/docs/Javascript/React">React</a></li><li class="navListItem"><a class="navItem" href="/documentary/docs/Javascript/Typescript">Typescript</a></li><li class="navListItem"><a class="navItem" href="/documentary/docs/Javascript/Unit_Tests">Unit_Tests</a></li><li class="navListItem"><a class="navItem" href="/documentary/docs/Javascript/NodeEnv">NodeEnv</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Python<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/documentary/docs/Python/Python">Python</a></li><li class="navListItem"><a class="navItem" href="/documentary/docs/Python/Anaconda">Anaconda</a></li><li class="navListItem"><a class="navItem" href="/documentary/docs/Python/Jupyter">Jupyter</a></li><li class="navListItem"><a class="navItem" href="/documentary/docs/Python/Django">Django</a></li><li class="navListItem"><a class="navItem" href="/documentary/docs/Python/Matplotlib">Matplotlib</a></li><li class="navListItem"><a class="navItem" href="/documentary/docs/Python/Numpy">Numpy</a></li><li class="navListItem"><a class="navItem" href="/documentary/docs/Python/Scipy">Scipy</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">CSS<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/documentary/docs/CSS/CSS">CSS</a></li><li class="navListItem"><a class="navItem" href="/documentary/docs/CSS/Bootstrap">Bootstrap</a></li><li class="navListItem"><a class="navItem" href="/documentary/docs/CSS/MaterialUi">MaterialUi</a></li><li class="navListItem"><a class="navItem" href="/documentary/docs/CSS/Sass">Sass</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Java<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/documentary/docs/Java/Java">Java</a></li><li class="navListItem"><a class="navItem" href="/documentary/docs/Java/SpringBoot">SpringBoot</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">C++<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/documentary/docs/C++/C++">C++</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Database<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/documentary/docs/Database/Database">Database</a></li><li class="navListItem"><a class="navItem" href="/documentary/docs/Database/SQLvsNoSQL">SQL vs No SQL</a></li><li class="navListItem"><a class="navItem" href="/documentary/docs/Database/SQL">SQL</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Machine Learning<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/documentary/docs/Machine Learning/MachineLearning">Machine Learning</a></li><li class="navListItem"><a class="navItem" href="/documentary/docs/Machine Learning/Tensorflow">Tensorflow</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">OS<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/documentary/docs/OS/Linux">Linux</a></li><li class="navListItem"><a class="navItem" href="/documentary/docs/OS/Mac">Mac</a></li><li class="navListItem"><a class="navItem" href="/documentary/docs/OS/Windows">Windows</a></li><li class="navListItem"><a class="navItem" href="/documentary/docs/OS/WindowsBat">WindowsBat</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">HowTos<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/documentary/docs/HowTos/Docusaurus">Docusaurus</a></li><li class="navListItem"><a class="navItem" href="/documentary/docs/HowTos/Email">Email</a></li><li class="navListItem"><a class="navItem" href="/documentary/docs/HowTos/ESLint">ESLint</a></li><li class="navListItem"><a class="navItem" href="/documentary/docs/HowTos/Git">Git</a></li><li class="navListItem"><a class="navItem" href="/documentary/docs/HowTos/Markdown">Markdown</a></li><li class="navListItem"><a class="navItem" href="/documentary/docs/HowTos/VSCode">VSCode</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Sonstiges<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/documentary/docs/Sonstiges/RegularExpressions">RegularExpressions</a></li><li class="navListItem"><a class="navItem" href="/documentary/docs/Sonstiges/DesignPattern">Design Pattern</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/documentary/docs/Sonstiges/Docker">Docker</a></li><li class="navListItem"><a class="navItem" href="/documentary/docs/Sonstiges/Latex">Latex</a></li><li class="navListItem"><a class="navItem" href="/documentary/docs/Sonstiges/Network">Network</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">Docker</h1></header><article><div><span><h1><a class="anchor" aria-hidden="true" id="how-to-docker"></a><a href="#how-to-docker" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>HOW TO DOCKER</h1>
+<ul>
+<li>Overleaf
+<ul>
+<li>an.ko@</li>
+<li>menTec7</li>
+</ul></li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="getting-started-https-docsdockercom-get-started"></a><a href="#getting-started-https-docsdockercom-get-started" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Getting Started <a href="https://docs.docker.com/get-started/">https://docs.docker.com/get-started/</a></h3>
+<h3><a class="anchor" aria-hidden="true" id="libraries-https-docsdockercom-samples-library-references"></a><a href="#libraries-https-docsdockercom-samples-library-references" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Libraries           <a href="https://docs.docker.com/samples/#library-references">https://docs.docker.com/samples/#library-references</a></h3>
+<p>| <em>docker images</em></p>
+<ul>
+<li>show all Docker images</li>
+</ul>
+<p>| <em>docker ps</em></p>
+<ul>
+<li>show all Docker container</li>
+<li>docker ps -a
+<ul>
+<li>shows all docker container (some are otherwise invisible)</li>
+<li>those dont necessarily get removed by &quot;docker rm&quot;</li>
+</ul></li>
+</ul>
+<p>| <em>docker run hello-world</em></p>
+<ul>
+<li>Run hello-world to see if the instillation is working</li>
+</ul>
+<p>###################################################################</p>
+<h1><a class="anchor" aria-hidden="true" id="dockerfile-befehle"></a><a href="#dockerfile-befehle" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Dockerfile Befehle</h1>
+<h2><a class="anchor" aria-hidden="true" id="cmd-befehle"></a><a href="#cmd-befehle" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>CMD Befehle</h2>
+<p>docker build</p>
+<ul>
+<li>build an image
+docker run</li>
+<li>run an image
+docker ps -a</li>
+<li>show all running container
+docker images</li>
+<li>show all build images
+docker exec</li>
+<li>ssh into a running container
+docker login</li>
+<li>login for &quot;hub.docker.com&quot;
+docker info</li>
+<li></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="docker-attach"></a><a href="#docker-attach" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>docker attach</h2>
+<h2><a class="anchor" aria-hidden="true" id="docker-logs"></a><a href="#docker-logs" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>docker logs</h2>
+<p>docker stop</p>
+<ul>
+<li>stop Container (still in the background, seen with docker ps -a)
+docker rm / rmi</li>
+<li>remove image / container</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="from"></a><a href="#from" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>FROM</h2>
+<ul>
+<li>The base image for building a new image. This command must be on top of the dockerfile</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="maintainer"></a><a href="#maintainer" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>MAINTAINER</h2>
+<ul>
+<li>optional, it contains the name of the maintainer of the image</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="add"></a><a href="#add" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ADD</h2>
+<p>Copy a file from the host machine to the new docker image. There is an option to use an URL for the file, docker will then download that file to the destination directory.</p>
+<h2><a class="anchor" aria-hidden="true" id="env"></a><a href="#env" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ENV</h2>
+<p>Define an environment variable
+ENV <name> <value></p>
+<p>e.g.
+ENV Port 8000</p>
+<h2><a class="anchor" aria-hidden="true" id="run"></a><a href="#run" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>RUN</h2>
+<ul>
+<li>used to execute a command during the build process of the docker image</li>
+<li>e.g.
+<ul>
+<li>RUN echo $PROPERTY_NAME</li>
+<li>apt update</li>
+<li>apt upgrade</li>
+<li>apt install maven</li>
+</ul></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="cmd"></a><a href="#cmd" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>CMD</h2>
+<p>Used for executing commands when we build a newcontainer from the docker image.</p>
+<ul>
+<li>does not run when you simply build the Container</li>
+<li>can only be used once and is basically an end point, where the last command should be</li>
+</ul>
+<p>e.g.
+CMD java <br>
+-cp 'google-cloudsearch-database-connector-v1-0.0.5.jar:sforce-jdbc.jar' <br>
+com.google.enterprise.cloudsearch.database.DatabaseFullTraversalConnector <br>
+-Dconfig=$PROPERTY_NAME</p>
+<p>ENTRYPOINT</p>
+<p>Define the default command that will be executed when the container is running.</p>
+<ul>
+<li>TODO testing</li>
+</ul>
+<p>WORKDIR</p>
+<p>This is directive for CMD command to be executed.</p>
+<p>USER</p>
+<p>Set the user or UID for the container created with the image.</p>
+<p>VOLUME</p>
+<p>Enable access/linked directory between the container and the host machine.</p>
+<p>EXPOSE</p>
+<p>###################################################################</p>
+<h1><a class="anchor" aria-hidden="true" id="start-image"></a><a href="#start-image" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Start Image</h1>
+<p>Create and Start an Image inside a Docker Container</p>
+<p>Create Image -&gt; Build Image (nothing still in the container)</p>
+<ul>
+<li>First go into the directory with the Dockerfile</li>
+<li>image Name must contain lower case letters only</li>
+</ul>
+<p>| <em>docker build -t imagename .</em></p>
+<ul>
+<li>Don't forget the  &quot;.&quot;  at the end</li>
+</ul>
+<p>| <em>docker run -p 4000:80 imageName</em></p>
+<ul>
+<li>Create a container and starts the Image inside of it</li>
+<li>4000 is the port from the docker; 80 is the port of the server inside the file you want to use e.g. python or express server</li>
+</ul>
+<p>| <em>docker run -p 4000 imageName</em></p>
+<ul>
+<li>when you do docker run, you CANT access the server via localhost:80   (maybe only in windows, sometimes you can use localhost:4000 or 0.0.0.0:4000)</li>
+<li>use the docker ip e.g.    192.168.99.100:4000</li>
+<li>get ip with: docker inspect <containerID>; OR just start the Docker Quickstart Terminal it shows the ip</li>
+<li>Best: !!! docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' <containerId></li>
+<li>docker inspect <container id> | grep &quot;IPAddress&quot;</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="start-image-without-it-exiting"></a><a href="#start-image-without-it-exiting" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Start image without it exiting</h2>
+<pre><code class="hljs">docker run -t -d imagename
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="or-use-docker-compose"></a><a href="#or-use-docker-compose" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>OR use Docker Compose</h2>
+<p><a href="https://docs.docker.com/compose/gettingstarted/">https://docs.docker.com/compose/gettingstarted/</a></p>
+<p>fast alles wie zuvor nur erstelle noch docker-compose.yml</p>
+<ul>
+<li>man muss nicht mehr build und run machen</li>
+</ul>
+<p>###################################################################</p>
+<h1><a class="anchor" aria-hidden="true" id="delete"></a><a href="#delete" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>DELETE</h1>
+<h2><a class="anchor" aria-hidden="true" id="delete-docker-container"></a><a href="#delete-docker-container" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Delete Docker Container:</h2>
+<p>| <em>docker ps</em></p>
+<ul>
+<li>to look up the id</li>
+</ul>
+<p>| <em>docker rm --force imageId</em></p>
+<ul>
+<li>remove image</li>
+</ul>
+<h1><a class="anchor" aria-hidden="true" id="delete-docker-image"></a><a href="#delete-docker-image" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Delete Docker Image:</h1>
+<p>| <em>docker images</em></p>
+<ul>
+<li>to look up image id</li>
+</ul>
+<p>| <em>docker rmi --force imageId</em></p>
+<ul>
+<li>delete from &quot;docker images&quot;</li>
+<li>oder Repository Name</li>
+</ul>
+<h1><a class="anchor" aria-hidden="true" id="delete-volumes"></a><a href="#delete-volumes" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Delete Volumes</h1>
+<p>| <em>docker volume rm -f volumeId</em></p>
+<ul>
+<li>delete from &quot;docker ps&quot;</li>
+<li>delete one Volumes</li>
+</ul>
+<p>| <em>docker system prune</em></p>
+<ul>
+<li>Delete Everything (??? images and container are still there afterwards ???)</li>
+</ul>
+<p>###################################################################</p>
+<h2><a class="anchor" aria-hidden="true" id="access-cmd-inside-the-container-ssh-into-running-container"></a><a href="#access-cmd-inside-the-container-ssh-into-running-container" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Access CMD inside the Container (SSH into running Container)</h2>
+<p><a href="http://phase2.github.io/devtools/common-tasks/ssh-into-a-container/">http://phase2.github.io/devtools/common-tasks/ssh-into-a-container/</a></p>
+<ul>
+<li>can only be used on a running Container</li>
+</ul>
+<p>| <em>docker exec -it containerId bash</em></p>
+<p>###################################################################</p>
+<h1><a class="anchor" aria-hidden="true" id="docker-compose"></a><a href="#docker-compose" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Docker Compose</h1>
+<ul>
+<li>hauptsächlich für Development Stage und Testing (i think?)</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="nodejs"></a><a href="#nodejs" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>NodeJs</h2>
+<pre><code class="hljs">version: &quot;2&quot;
+services:
+node:
+    image: &quot;node:8&quot;
+    user: &quot;node&quot;
+    working_dir: /home/node/app
+    environment:
+    - NODE_ENV=production
+    volumes:
+    - ./:/home/node/app
+    expose:
+    - &quot;8081&quot;
+    command: &quot;npm start&quot;
+</code></pre>
+<p>Befehle:</p>
+<p>| <em>docker-compose build</em></p>
+<p>| <em>docker-compose up</em></p>
+<p>| <em>docker-compose ps</em></p>
+<p>| <em>docker-compose rm</em></p>
+<p>###################################################################</p>
+<h1><a class="anchor" aria-hidden="true" id="docker-volume"></a><a href="#docker-volume" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Docker Volume</h1>
+<ul>
+<li>WHAT DOES IT DO???
+<ul>
+<li>i think:</li>
+<li>WRONG? z.B. eine Datei vom lokalen Speicher in den Docker Container verschieben</li>
+<li>er stellt eine Verbindung/Abbildung her von einer lokalen Datei. Das heißt wenn man in einer lokalen Datei etwas ändert, muss der Docker Container nicht nochmal neu gebaut werden (build)
+<ul>
+<li>sondern nur nochmal docker run (oder automatisch???, wenn er die ganze Zeit läuft?)</li>
+</ul></li>
+</ul></li>
+<li><ul>
+<li>official:
+<ul>
+<li>Create mount points for holding externally mounted volumes from the native host or other containers.</li>
+<li><a href="https://docs.docker.com/engine/reference/builder/#volume">https://docs.docker.com/engine/reference/builder/#volume</a></li>
+</ul></li>
+</ul></li>
+</ul>
+<p>| <em>docker volume ls</em></p>
+<ul>
+<li>show all volumes</li>
+</ul>
+<p>| <em>docker run -it -v &quot;//c/Users/nisys/Desktop/Andre/DockerImages/wetter:/usr/src/app&quot; -p 4000:4200 testmount</em></p>
+<ul>
+<li>This via the -v parameter kind of makes a COPY command inside the Docker Container</li>
+</ul>
+<p>Other Option:</p>
+<p>put the Volume inside the Dockerfile:</p>
+<p>VOLUME . /usr/src/app</p>
+<ul>
+<li>doesn't work ??? maybe only on windows ???</li>
+</ul>
+<h1><a class="anchor" aria-hidden="true" id="delete-volumes-1"></a><a href="#delete-volumes-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Delete Volumes</h1>
+<p>| <em>docker volume rm -f volumeId</em></p>
+<ul>
+<li>delete one Volumes</li>
+</ul>
+<p>docker rm $(docker ps -a -q)</p>
+<ul>
+<li>delete all Container</li>
+</ul>
+<p>docker exit</p>
+<p>###################################################################</p>
+<h1><a class="anchor" aria-hidden="true" id="save-load"></a><a href="#save-load" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>SAVE &amp; Load</h1>
+<h2><a class="anchor" aria-hidden="true" id="save"></a><a href="#save" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Save</h2>
+<p>| <em>docker save -o &lt; path &gt; &lt; name &gt;</em></p>
+<ul>
+<li>save</li>
+</ul>
+<p>| <em>docker save imageName</em></p>
+<ul>
+<li>fileName.tar</li>
+</ul>
+<p>| <em>docker save --output busybox.tar busybox</em></p>
+<ul>
+<li>save asbusybox.tar</li>
+</ul>
+<p>| <em>docker save -o C:\Users\Andre wetterimage</em></p>
+<ul>
+<li>save as</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="load"></a><a href="#load" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Load</h2>
+<p>| <em>docker load</em></p>
+<ul>
+<li>fileName.tar</li>
+</ul>
+<p>| <em>docker load --input fileName.tar</em></p>
+<p>###################################################################</p>
+<h1><a class="anchor" aria-hidden="true" id="variables-and-environmental-variables"></a><a href="#variables-and-environmental-variables" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Variables and Environmental Variables</h1>
+<h2><a class="anchor" aria-hidden="true" id="arg"></a><a href="#arg" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ARG</h2>
+<ul>
+<li>kann im &quot;docker build&quot; Befehl benutzt werden</li>
+</ul>
+<p>// Vorher muss! man die Variable initialisieren, optional mit default value</p>
+<p>ARG PROPERTY_NAME=default_value
+RUN echo $PROPERTY_NAME</p>
+<p>e.g.
+docker build --build-arg PROPERTY_NAME=someName -t imageName .</p>
+<h2><a class="anchor" aria-hidden="true" id="env-1"></a><a href="#env-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ENV</h2>
+<ul>
+<li>wird innerhalb des &quot;docker run&quot; Befehls eingesetzt</li>
+</ul>
+<p>ENV PROPERTY_NAME accounts_connector-config.properties</p>
+<p>e.g.
+docker run --name=Accounts -e PROPERTY_NAME=someName imageName</p>
+<p>###################################################################</p>
+<h1><a class="anchor" aria-hidden="true" id="docker-hub"></a><a href="#docker-hub" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Docker Hub</h1>
+<p>Erstelle Account bei <a href="https://hub.docker.com/">https://hub.docker.com/</a></p>
+<h2><a class="anchor" aria-hidden="true" id="push"></a><a href="#push" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Push</h2>
+<p>| <em>docker login --username=yourhubusername</em></p>
+<p>| <em>docker tag imageId yourhubusername/repoName:firsttry</em></p>
+<ul>
+<li>get image id and repoName with:   docker images</li>
+<li>insead firsttry to latest which is the default when pulling (when you are not doing the tag latest is probably the standard)</li>
+</ul>
+<p>| <em>docker push yourhubusername/repoName</em></p>
+<h2><a class="anchor" aria-hidden="true" id="pull"></a><a href="#pull" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Pull</h2>
+<p>| <em>docker pull cato0/test3</em></p>
+<p>| <em>docker run -p 4000:8000 cato0/test3</em></p>
+<ul>
+<li><a href="http://192.168.99.100:4000/">http://192.168.99.100:4000/</a></li>
+</ul>
+<p>###################################################################</p>
+<h1><a class="anchor" aria-hidden="true" id="docker-mounting-volume"></a><a href="#docker-mounting-volume" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Docker Mounting Volume</h1>
+<ul>
+<li>Updates on the Host are immediately reflected into the Docker container</li>
+<li>use this for Docker during Development</li>
+</ul>
+<p>| <em>docker run -v /host/directory:/container/directory -other -options image_name command_to_run</em></p>
+<p>e.g.</p>
+<p>| <em>docker run -it -v /usr/src/test:/usr/src/app -p 4000:4200 cato0/wetter</em></p>
+<p>| <em>docker run -it -v &quot;//c/users/DockerImages/wetter:/usr/src/app&quot; -p 4000:4200 cato0/wetter</em></p>
+<ul>
+<li>-it =&gt; (Interactively)</li>
+</ul>
+<p>###################################################################</p>
+<h1><a class="anchor" aria-hidden="true" id="dockerfile-fur-angular-nodejs"></a><a href="#dockerfile-fur-angular-nodejs" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Dockerfile für Angular + NodeJS</h1>
+<pre><code class="hljs">FROM node:8.11.3
+
+WORKDIR /usr/src/app
+
+RUN npm install
+RUN npm install -g @angular/cli
+RUN npm install -g @angular-devkit/build-angular
+
+COPY . .
+
+RUN npm install
+
+EXPOSE 4200
+
+CMD ng serve --host 0.0.0.0
+</code></pre>
+<h1><a class="anchor" aria-hidden="true" id="dockerignore"></a><a href="#dockerignore" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>.dockerignore</h1>
+<pre><code class="hljs">node_modules
+npm-debug.log
+Dockerfile*
+.dockerignore
+.git
+.gitignore
+README.md
+</code></pre>
+<p>###################################################################</p>
+<h1><a class="anchor" aria-hidden="true" id="dockerfile-fur-python"></a><a href="#dockerfile-fur-python" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Dockerfile für Python</h1>
+<p>| <em>FROM python:2.7-slim</em></p>
+<ul>
+<li>Use an official Python runtime as a parent image</li>
+</ul>
+<p>| <em>WORKDIR /app</em></p>
+<ul>
+<li>Set the working directory to /app</li>
+</ul>
+<p>| <em>ADD . /app</em></p>
+<ul>
+<li>Copy the current directory contents into the container at /app</li>
+</ul>
+<p>| <em>RUN pip install --trusted-host pypi.python.org -r requirements.txt</em></p>
+<ul>
+<li>Install any needed packages specified in requirements.txt</li>
+<li>RUN [ <command> , <parameter>]</li>
+<li>e.g. [ TODO ]
+or</li>
+<li>RUN <command></li>
+<li>e.g.
+RUN apt-get update</li>
+</ul>
+<p>| <em>EXPOSE 80</em></p>
+<ul>
+<li>Make port 80 available to the world outside of this container</li>
+</ul>
+<p>| <em>ENV NAME World</em></p>
+<ul>
+<li>Define environment variable</li>
+<li>e.g.
+<ul>
+<li>ENV LOG_PATH /logs</li>
+<li>ENV SERVER_PORT 8000</li>
+</ul></li>
+</ul>
+<p>| <em>CMD [&quot;python&quot;, &quot;app.py&quot;]</em></p>
+<ul>
+<li>Run app.py when the container launches</li>
+</ul>
+<h1><a class="anchor" aria-hidden="true" id="create-requirementstxt-file"></a><a href="#create-requirementstxt-file" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Create requirements.txt file</h1>
+<p>Inhalt:</p>
+<pre><code class="hljs">Flask
+Redis
+</code></pre>
+<h1><a class="anchor" aria-hidden="true" id="create-python-file-apppy"></a><a href="#create-python-file-apppy" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Create Python file app.py</h1>
+<pre><code class="hljs">from flask import Flask
+from redis import Redis, RedisError
+
+import os
+
+import socket
+</code></pre>
+<h1><a class="anchor" aria-hidden="true" id="connect-to-redis"></a><a href="#connect-to-redis" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Connect to Redis</h1>
+<pre><code class="hljs">redis = Redis(host=&quot;redis&quot;, db=0, socket_connect_timeout=2, socket_timeout=2)
+
+app = Flask(__name__)
+
+@app.route(&quot;/&quot;)
+
+def hello():
+
+    try:
+        visits = redis.incr(&quot;counter&quot;)
+    except RedisError:
+        visits = &quot;&lt;i&gt;cannot connect to Redis, counter disabled&lt;/i&gt;&quot;
+
+    html = &quot;&lt;h3&gt;Hello {name}!&lt;/h3&gt;&quot; \
+        &quot;&lt;b&gt;Hostname:&lt;/b&gt; {hostname}&lt;br/&gt;&quot; \
+        &quot;&lt;b&gt;Visits:&lt;/b&gt; {visits}&quot;
+    return html.format(name=os.getenv(&quot;NAME&quot;, &quot;world&quot;), hostname=socket.gethostname(), visits=visits)
+
+
+if __name__ == &quot;__main__&quot;:
+    app.run(host='0.0.0.0', port=80)
+</code></pre>
+<p>###################################################################</p>
+<h1><a class="anchor" aria-hidden="true" id="nice-tips"></a><a href="#nice-tips" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Nice Tips</h1>
+<ol>
+<li></li>
+</ol>
+<ul>
+<li>use this Command to keep the Docker Container running</li>
+</ul>
+<blockquote>
+<p>CMD tail -f /dev/null</p>
+</blockquote>
+<ol start="2">
+<li>Copy something from Dokcer Container, to the Host</li>
+</ol>
+<ul>
+<li>docker cp <containerId>:/file/path/within/container /host/path/target</li>
+<li>e.g.
+<ul>
+<li>docker cp e76a2006338f:/usr/app/ /Users/akonhardt/Desktop/Stuff/DockerFiles</li>
+</ul></li>
+</ul>
+<ol start="3">
+<li>Transfer Parameters into the Docker Container</li>
+</ol>
+<ul>
+<li>create an Environmental Variable and set it to the name of something that the User puts in</li>
+<li>docker run -e MYVAR1 -e MYVAR2=foo --env-file ./env.list ubuntu bash</li>
+<li>-e MYVAR1             =&gt; sets a locally name MYVAR envirable and sents it to the container</li>
+<li>-e MYVAR2=foo         =&gt; sets the Environmetal Variable MYVAR2 inside the Container to foo</li>
+<li>--env-file ./env.list =&gt; sets a file ???</li>
+</ul>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/documentary/docs/Sonstiges/DesignPattern"><span class="arrow-prev">← </span><span>Design Pattern</span></a><a class="docs-next button" href="/documentary/docs/Sonstiges/Latex"><span>Latex</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#cmd-befehle">CMD Befehle</a></li><li><a href="#docker-attach">docker attach</a></li><li><a href="#docker-logs">docker logs</a></li><li><a href="#from">FROM</a></li><li><a href="#maintainer">MAINTAINER</a></li><li><a href="#add">ADD</a></li><li><a href="#env">ENV</a></li><li><a href="#run">RUN</a></li><li><a href="#cmd">CMD</a></li><li><a href="#start-image-without-it-exiting">Start image without it exiting</a></li><li><a href="#or-use-docker-compose">OR use Docker Compose</a></li><li><a href="#delete-docker-container">Delete Docker Container:</a></li><li><a href="#access-cmd-inside-the-container-ssh-into-running-container">Access CMD inside the Container (SSH into running Container)</a></li><li><a href="#nodejs">NodeJs</a></li><li><a href="#save">Save</a></li><li><a href="#load">Load</a></li><li><a href="#arg">ARG</a></li><li><a href="#env-1">ENV</a></li><li><a href="#push">Push</a></li><li><a href="#pull">Pull</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/documentary/" class="nav-home"><img src="/documentary/img/favicon.ico" alt="myGithub" width="66" height="58"/></a><div><h5>Docs</h5><a href="/documentary/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/documentary/docs/en/doc2.html">Guides (or other categories)</a><a href="/documentary/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/documentary/en/users.html">User Showcase</a><a href="https://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/documentary/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://opensource.facebook.com/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/documentary/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2019 Your Name or Your Company Name</section></footer></div></body></html>
