@@ -1,17 +1,17 @@
 {
   "docs": {
-    "Javascript": ["Angular2++", "AngularJS", "Javascript", "jQuery", "React", "Typescript", "Unit_Tests"],
-    "Python": ["Python", "Anaconda","Jupyter", "Django", "Matplotlib", "Numpy","Scipy"],
-    "CSS": ["CSS", "Bootstrap", "MaterialUi", "Sass"],
-    "Java": ["Java", "SpringBoot"],
-    "C++": ["C++"],
-    "C#": ["C#"],
-    "Php": ["Php"],
-    "Database" : ["Database", "SQLvsNoSQL", "SQL"],
-    "Machine Learning" : ["MachineLearning", "Tensorflow"],
-    "OS" : ["Linux", "Mac", "Windows", "WindowsBat"],
-    "HowTos" : ["Docusaurus", "Email", "ESLint", "Git", "Markdown", "VSCode", "GithubPages"],
-    "Sonstiges" : ["RegularExpressions", "DesignPattern", "Docker", "Latex", "Network", "Scrum", "InterviewQuestions", "StickFormatieren"]
+    "Javascript": ["Javascript/Angular2++", "Javascript/AngularJS", "Javascript/Javascript", "Javascript/jQuery", "Javascript/React", "Javascript/Typescript", "Javascript/Unit_Tests", "Javascript/NodeEnv"],
+    "Python": ["Python/Python", "Python/Anaconda","Python/Jupyter", "Python/Django", "Python/Matplotlib", "Python/Numpy","Python/Scipy"],
+    "CSS": ["CSS/CSS", "CSS/Bootstrap", "CSS/MaterialUi", "CSS/Sass"],
+    "Java": ["Java/Java", "Java/SpringBoot"],
+    "C++": ["C++/C++"],
+    "C#": ["C#/C#"],
+    "Php": ["Php/Php"],
+    "Database" : ["Database/Database", "Database/SQLvsNoSQL", "Database/SQL"],
+    "Machine Learning" : ["Machine Learning/MachineLearning", "Machine Learning/Tensorflow"],
+    "OS" : ["OS/Linux", "OS/Mac", "OS/Windows", "OS/WindowsBat"],
+    "HowTos" : ["HowTos/Docusaurus", "HowTos/Email", "HowTos/ESLint", "HowTos/Git", "HowTos/Markdown", "HowTos/VSCode", "HowTos/GithubPages"],
+    "Sonstiges" : ["Sonstiges/RegularExpressions", "Sonstiges/DesignPattern", "Sonstiges/Docker", "Sonstiges/Latex", "Sonstiges/Network", "Sonstiges/Scrum", "Sonstiges/InterviewQuestions", "Sonstiges/StickFormatieren"]
 
   },
   "docs-other": {
