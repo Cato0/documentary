@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>cato0.github.io/documentary/blog</id>
-    <title>Test Site Blog</title>
+    <title>myGithub Blog</title>
     <updated>2017-10-24T06:00:00Z</updated>
     <generator>Feed for Node.js</generator>
     <link rel="alternate" href="cato0.github.io/documentary/blog"/>
-    <subtitle>The best place to stay up-to-date with the latest Test Site news and events.</subtitle>
+    <subtitle>The best place to stay up-to-date with the latest myGithub news and events.</subtitle>
     <logo>cato0.github.io/documentary/img/favicon.ico</logo>
     <rights>Copyright © 2019 Your Name or Your Company Name</rights>
     <entry>
