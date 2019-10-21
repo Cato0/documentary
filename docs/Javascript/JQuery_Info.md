@@ -8,19 +8,19 @@ sidebar_label: jQuery
 
 - [Table of Contents](#table-of-contents)
 
-# Select
+## Select
 
     $(".className")
     $("#idName")
     $("body")
 
-# Attributes
+## Attributes
 
     <div someName="something"></div>
 
     attrValue = x.attr("someName")
 
-# Classes
+## Classes
 
     .hasClass("name")
     .addClass("name")
@@ -29,29 +29,53 @@ sidebar_label: jQuery
     ... 
 
 
-# Create/Append & Delete
+## Create/Append & Delete
 
-## Append
+### Append
 
 $("#x").append("<div>asd</div>");
 
 
-## Delete
+### Delete
 
 $("#x").remove();
 
 
-# Document Ready
+## Document Ready
 
     $(document).ready(function () {
         ...
     }
 
 
-# CSS
+## CSS
 
 ???
 x.css.backgroundImage("red")
 
 x.html("asd")
 
+
+## each-Loop
+
+    $('.button-1,.button-2,.button-3').each(function() {
+        $(this).something();
+    });
+
+## jQuery Function
+
+
+    (function( $ ){
+        $.fn.myfunction = function() {
+            this.css("color", "green");
+            return this;            
+        }; 
+    })( jQuery );
+
+
+1. Wrapped around an "Immediately-Invoked Function", to work better with other jQuery Plugins
+2. The "return this" makes it so the function is chainable with others
+3. Then you can call it with:
+
+
+    $('#my_div').myfunction();

@@ -166,6 +166,10 @@ Das Element ist 0, es gibt nur die 4 Borders. Wenn 3 davon entfernt werden, komm
 
 TODO
 
+# Animtation / Transition
+
+    transition: margin-right 4s;
+
 # Visibility
 
 ## Visibility: hidden    vs.    display: none
