@@ -32,6 +32,15 @@ Go To Decleration
 
 ## Git
 
+## Usual Push Pattern
+
+0. Ctrl + P
+1. Ctrl + K
+2. Ctrl + Enter
+3. Ctrl + Shift + K
+4. Ctrl + Enter
+
+
 Git pull
 > VCS -> Git -> Fetch / Pull
 
