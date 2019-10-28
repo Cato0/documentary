@@ -8,3 +8,23 @@ sidebar_label: intelliJ
 
 ## Shortcuts
 
+Suche File
+>Shift+Shift
+
+Project Structure Setting
+>Strg + Shift + alt + s
+
+Go To Decleration
+>Ctrl + Click
+
+
+## Git
+
+Git pull
+> 
+
+Git push
+> 
+
+Git commit
+> Ctrl + K
