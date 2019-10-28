@@ -15,7 +15,7 @@ sidebar_label: intelliJ
 1. git Pull
 > Ctrl + P
 
-2. somethign else
+2. something else
 
 
 ## Shortcuts
