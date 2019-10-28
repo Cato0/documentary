@@ -6,6 +6,18 @@ sidebar_label: intelliJ
 
 # Commands
 
+## Change Keymap
+
+> File -> Settings -> Keymap
+
+### My Changes
+
+1. git Pull
+> Ctrl + P
+
+2. somethign else
+
+
 ## Shortcuts
 
 Suche File
