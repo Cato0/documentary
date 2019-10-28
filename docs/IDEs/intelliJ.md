@@ -21,10 +21,10 @@ Go To Decleration
 ## Git
 
 Git pull
-> 
+> VCS -> Git -> Fetch / Pull
 
 Git push
-> 
+> Ctrl + Shift + K
 
 Git commit
 > Ctrl + K
