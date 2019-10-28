@@ -29,6 +29,9 @@ Project Structure Setting
 Go To Decleration
 >Ctrl + Click
 
+Next / Previous Tab
+> Alt + left / right
+
 
 ## Git
 
