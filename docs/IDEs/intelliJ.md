@@ -21,7 +21,10 @@ sidebar_label: intelliJ
 ## Shortcuts
 
 Suche File
->Shift+Shift
+> Shift+Shift
+
+Volle Suche, nach Text in Files
+> Ctrl + Shift + F
 
 Project Structure Setting
 >Strg + Shift + alt + s
