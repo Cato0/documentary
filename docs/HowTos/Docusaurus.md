@@ -6,22 +6,25 @@ sidebar_label: Docusaurus
 
 https://docusaurus.io/docs/en/tutorial-setup
 
-# Install
+## Cycle
+
+npm run publish-gh-pages
+
+## Install
 
 npm install --global docusaurus-init
 
-
-# Create Page
+## Create Page
 
 docusaurus-init
 
-# Start
+## Start
 
 npm start
 
-# Publish
+## Publish
 
-## Github Pages
+### Github Pages
 
 
 1. Edit the file docusaurus-tutorial/website/siteConfig.js and fill in the following values:
@@ -41,10 +44,10 @@ npm start
 4. GIT_USER=USERNAME CURRENT_BRANCH=master USE_SSH=true npm run publish-gh-pages
 
 
-# Code
+## Code
 
 
-## Create new Page
+### Create new Page
 
 Add the Header and put the Id into siteConfig.js File. And have the .md Document inside the "docs"-Folder
 
@@ -56,4 +59,4 @@ Header:
     sidebar_label: Javascript
     ---
 
-# Live Server
+## Live Server
