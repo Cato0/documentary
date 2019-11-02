@@ -306,7 +306,12 @@ cd into your project folder
 
 TODO
 
+## Cross-Origin Error
+
+Siehe Javascript_Info.md
+
 ######################################################################################
+
 
 
 # Observables (Observers)
