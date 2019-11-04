@@ -10,6 +10,13 @@ sidebar_label: intelliJ
 
 > File -> Settings -> Keymap
 
+## Debugger
+
+- Umschalt + F9 (oben rechts der Käfer)
+- nächster Schritt F8
+- zum nächsten Breakpoint F9
+
+
 ### My Changes
 
 1. git Pull

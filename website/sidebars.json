@@ -9,8 +9,9 @@
     "Php": ["Php/Php"],
     "Database" : ["Database/Database", "Database/SQLvsNoSQL", "Database/SQL"],
     "Machine Learning" : ["Machine Learning/MachineLearning", "Machine Learning/Tensorflow"],
+    "IDEs" : ["IDEs/intelliJ", "IDEs/VSCode"],
     "OS" : ["OS/Linux", "OS/Mac", "OS/Windows", "OS/WindowsBat"],
-    "HowTos" : ["HowTos/Docusaurus", "HowTos/Email", "HowTos/ESLint", "HowTos/Git", "HowTos/Markdown", "HowTos/VSCode", "HowTos/GithubPages"],
+    "HowTos" : ["HowTos/Docusaurus", "HowTos/Email", "HowTos/ESLint", "HowTos/Git", "HowTos/Markdown","HowTos/GithubPages"],
     "Sonstiges" : ["Sonstiges/RegularExpressions", "Sonstiges/DesignPattern", "Sonstiges/Docker", "Sonstiges/Latex", "Sonstiges/Network", "Sonstiges/Scrum", "Sonstiges/InterviewQuestions", "Sonstiges/StickFormatieren"]
 
   },
