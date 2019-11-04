@@ -27,6 +27,21 @@ sidebar_label: Git
 
 ####################################################################################################
 
+## .gitconfig - Create Alias
+
+- look for your .gitconfig File at:
+	- Windows on C:\Users\USERNAME
+
+### My Aliases
+
+1. add, commit and push at the same time
+
+	[alias]
+		cmp = "!f() { git add -A && git commit -m \"$@\" && git push; }; f"
+
+	Usage: git cmp "your comment"
+
+
 # Standard Task
 
 | *git init*
