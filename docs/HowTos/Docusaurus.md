@@ -11,7 +11,9 @@ https://docusaurus.io/docs/en/tutorial-setup
 cd website
 
 npm run build
+
 set GIT_USER=username
+
 npm run publish-gh-pages
 
 ## Install

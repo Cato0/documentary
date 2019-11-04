@@ -37,7 +37,7 @@ sidebar_label: Git
 1. add, commit and push at the same time
 
 	[alias]
-		cmp = "!f() { git add -A && git commit -m \"$@\" && git push; }; f"
+		amp = "!f() { git add -A && git commit -m \"$@\" && git push; }; f"
 
 	Usage: git cmp "your comment"
 
