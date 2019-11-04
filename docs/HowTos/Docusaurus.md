@@ -8,6 +8,8 @@ https://docusaurus.io/docs/en/tutorial-setup
 
 ## Cycle
 
+cd website
+
 npm run build
 
 npm run publish-gh-pages
