@@ -44,9 +44,11 @@ sidebar_label: Git
 1. add, commit and push at the same time
 
 	[alias]
-		pushall = "!f() { git add -A && git commit -m \"$@\" && git push; }; f"
-
-	Usage: git cmp "your comment"
+		acp = "!f() { git add -A && git commit -m \"$@\" && git push; }; f"
+		s = "!f() { git status; }; f"
+		c = "!f() { git checkout \"$@\"; }; f"
+	
+	Usage: git acp "your comment"
 
 
 # Standard Task
