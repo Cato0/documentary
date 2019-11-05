@@ -13,7 +13,7 @@
     "OS" : ["OS/Linux", "OS/Mac", "OS/Windows", "OS/WindowsBat"],
     "HowTos" : ["HowTos/Docusaurus", "HowTos/Email", "HowTos/ESLint", "HowTos/Git", "HowTos/Markdown","HowTos/GithubPages"],
     "Sonstiges" : ["Sonstiges/RegularExpressions", "Sonstiges/DesignPattern", "Sonstiges/Docker", "Sonstiges/Latex", "Sonstiges/Network", "Sonstiges/Scrum", "Sonstiges/InterviewQuestions", "Sonstiges/StickFormatieren"],
-    "Work" : ["Work/FirstSpirit", "Work/SpringBoot"]
+    "Work" : ["Work/FirstSpirit", "Work/JSP", "Work/SpringBoot"]
 
   },
   "docs-other": {

@@ -1,34 +1,38 @@
 ---
-id: SpringBoot
-title: SpringBoot
-sidebar_label: SpringBoot
+id: JSP
+title: JSP
+sidebar_label: JSP
 ---
 
 # Commands
 
-## Each
 
-    <li class="skill-bar d-flex" th:each="gewinnzahl : *{gewinnzahlenHauptziehung}"> 
-
-        <div class="skill-bar-container"></div>
-
-    </li>
-
-
-
-## When - Otherwise
+## c:when - Otherwise
 
     <c:choose>
         <c:when test="${dateFrom lt now and now lt dateEnd}">       // lt => lower than =>  <
             <text>When</text>
         </c:when>
 
-
         <c:otherwise>
             <text>Otherwise</text>
         </c:otherwise>
     </c:choose>
 
-
 # <c:if>
+
+
+
+# c:set
+
+> <c:set scope="session" value="Marienkaefer" var="solution"/>
+
+Scope Options:
+    - session
+    - 
+
+
+# c:out
+
+> <c:out value="${value}" name="variable">
 
