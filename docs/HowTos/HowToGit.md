@@ -32,12 +32,16 @@ sidebar_label: Git
 - look for your .gitconfig File at:
 	- Windows on C:\Users\USERNAME
 
+	[user]
+		name = Konhardt, André
+		email = andre.konhardt@adesso.de
+
 ### My Aliases
 
 1. add, commit and push at the same time
 
 	[alias]
-		amp = "!f() { git add -A && git commit -m \"$@\" && git push; }; f"
+		pushall = "!f() { git add -A && git commit -m \"$@\" && git push; }; f"
 
 	Usage: git cmp "your comment"
 
