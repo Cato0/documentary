@@ -36,6 +36,8 @@ sidebar_label: Git
 		name = Konhardt, André
 		email = andre.konhardt@adesso.de
 
+	somethign else
+
 ### My Aliases
 
 1. add, commit and push at the same time
