@@ -30,7 +30,7 @@ SET myprojects="C:\Users\%username%\Desktop\myProjects\"
 SET angular="C:\Users\%username%\Desktop\myProjects\angularTestApp"
 SET uni="C:\Users\%username%\Desktop\myProjects\diatlogbot-vr-pepper\Code"
 SET now="C:\Projekte\relaunch-portal-sourcen\"
-SET test="C:\Users\konhardt\Desktop\myProjects\"
+SET test="C:\Users\%username%\Desktop\myProjects\"
 
 
 :: Create Script for my documentary to automatically add the header to Files and insert them into my doc Folder
@@ -71,7 +71,7 @@ doskey now= cd %now%
 doskey firefox= start firefox -p default-release							
 doskey firefox2= start firefox -p myProfile							
 doskey firefox3= start firefox							
-doskey test1= start C:\Users\konhardt\Desktop\new.txt
+doskey test1= start C:\Users\%username%\Desktop\new.txt
 
 :: Other useful shortkeys, linux inspired
 
@@ -79,6 +79,7 @@ doskey ls= dir
 doskey .= cd .
 doskey ..=cd ..
 doskey open= start $1
+doskey mkfile= copy NUL $1.$2
 
 REM doskey firefox2= start "C:\Program Files\Mozilla Firefox\firefox.exe" -p default-release							
 REM doskey firefox3= start C:\Program Files\Mozilla Firefox\firefox.exe -p myProfile						
@@ -88,5 +89,5 @@ REM doskey chrome2= start "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\
 :: Other
 
 :: doskey gac= "git add . && git commit -a -m "
-:: doskey overwrite = echo "Test">> "C:\Users\konhardt\Desktop\batfile2.bat"
+:: doskey overwrite = echo "Test">> "C:\Users\%username%\Desktop\batfile2.bat"
 :: doskey ov = call :app
