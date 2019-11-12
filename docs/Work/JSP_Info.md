@@ -21,7 +21,7 @@ sidebar_label: JSP
 
 # <c:if>
 
-
+    <c:if test="{email ==}">
 
 # c:set
 
@@ -30,9 +30,9 @@ sidebar_label: JSP
 Scope Options:
     - session
     - 
-
+    
 
 # c:out
 
-> <c:out value="${value}" name="variable">
+> <c:out value="${variableName}">
 
