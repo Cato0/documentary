@@ -8,7 +8,10 @@ sidebar_label: FirstSpirit
 
 ## Console.log
 
-TODO
+WinSCP
+
+- Log File
+    - /opt/jboss/5.2.0-eap/server/infocus1a/log/infocus-logfile.log
 
 ## With
 
@@ -88,4 +91,6 @@ TODO
     <= or le
     >= or ge
 
+e.g.
 
+<c:when test="${dateFrom lt now and now lt dateEnd}">
