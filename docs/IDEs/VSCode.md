@@ -34,6 +34,7 @@ Start from Command Line:
 > Datei -> Einstellungen -> Tastenkombinationen
 
 - Strg + P   = Suche nach Datei
+- Strg + Shift + P   = Input Feld
 
 - Strg + ,   = Option
 
