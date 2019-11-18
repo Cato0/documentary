@@ -42,6 +42,8 @@ Go To Decleration
 Next / Previous Tab
 > Alt + left / right
 
+Comment Line
+> Ctrl + /
 
 ## Git
 

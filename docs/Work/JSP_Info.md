@@ -7,6 +7,10 @@ sidebar_label: JSP
 # Commands
 
 
+## Each
+
+    ...
+
 ## c:when - Otherwise
 
     <c:choose>
@@ -36,3 +40,13 @@ Scope Options:
 
 > <c:out value="${variableName}">
 
+# c:forEach
+
+    <c:forEach var="type" items="${allTypes}" varStatus="typeStatus">
+        <li>
+        <sf:radiobutton path="subscriptionType" value="${type}" />
+        <label for="subscriptionType${typeStatus.count}">
+            <s:message code="subscriptionType.${type}" />
+        </label>
+        </li>
+    </c:forEach>
