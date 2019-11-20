@@ -35,11 +35,32 @@ sidebar_label: SpringBoot
     th:if="${#fields.hasErrors('ackAgb')}"
 
 
+
+## th:value
+
+    <input type="email" name="email" th:value="*{email}" placeholder="your@email" />
+
+- ähnlich wie in Angular wird die Variable email hier hinein gesetzt (2 Way Binding ?)
+
 ## th:field
 
     <input type="email" th:field="*{email}" placeholder="your@email" />
 
+- has different functionality depending on the html tag its inside
+- mit <input> ist es genauso wie th:value, außer das der name noch automatisch gesetzt wird
+
+
+## th:readonly="*{customerLoggedIn}"
+
+    <input type="text " placeholder="Antwort " name="answer" th:value="*{answer}" th:readonly="*{customerLoggedIn}">
+## th:disabled
+
+    <input type="text " placeholder="Antwort " name="answer" th:value="*{answer}" th:disabled="*{customerLoggedIn}">
+
 
 ## th:href
 
-...
+    <a th:href="@{/register.html}" class="btn btn--s forward">Jetzt registrieren</a>
+
+
+    

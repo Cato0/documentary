@@ -1,0 +1,7 @@
+Mit Thymeleaf:
+
+    <div _ngcontent-src-c3="" class="secure-code"><div _ngcontent-src-c3="" class="secure-code--head desktop-50width"><img _ngcontent-src-c3="" class="img-pin" th:src="@{'/captcha.jpeg'}"><input _ngcontent-src-c3="" class="" placeholder="Sichergeitscode eingeben" type="text"></div><div _ngcontent-src-c3="" class="secure-code--footer"><button _ngcontent-src-c3="" class="btn-text new-code">Neuer Code</button><button _ngcontent-src-c3="" class="btn btn--m forward">Jetzt prüfen</button></div></div>
+
+Ohne Thymeleaf:
+
+    ...

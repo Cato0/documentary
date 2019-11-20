@@ -68,16 +68,23 @@ doskey angular= cd %angular%
 doskey uni= cd %uni%
 doskey now= cd %now%
 
-doskey firefox= start firefox -p default-release							
-doskey firefox2= start firefox -p myProfile							
-doskey firefox3= start firefox							
-doskey test1= start C:\Users\%username%\Desktop\new.txt
+REM WORK STUFF
+doskey ltg= cd "C:\Projekte\LTG"
+doskey relaunch= cd "C:\Projekte\relaunch-portal-sourcen"
+
+REM doskey firefox= start firefox -p default-release							
+REM doskey firefox2= start firefox -p myProfile							
+REM doskey firefox3= start firefox							
+REM doskey test1= start C:\Users\%username%\Desktop\new.txt
+
+doskey firefox= start C:\Users\%username%\Desktop\firefox.lnk
+doskey firefox2= start C:\Users\%username%\Desktop\settings.lnk
 
 :: Other useful shortkeys, linux inspired
 
 doskey ls= dir
 doskey .= cd .
-doskey ..=cd ..
+doskey ..= cd ..
 doskey open= start $1
 doskey mkfile= copy NUL $1.$2
 

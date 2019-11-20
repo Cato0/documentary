@@ -10,11 +10,21 @@ sidebar_label: intelliJ
 
 > File -> Settings -> Keymap
 
+## Kompilieren
+
+- Edit Run / Debugger Configurations ändern
+-> Edit Configurations:
+    - "+" dann Maven
+        - Working Directory auswählen
+        - Command Line: "clean, install"
+
 ## Debugger
 
 - Umschalt + F9 (oben rechts der Käfer)
 - nächster Schritt F8
 - zum nächsten Breakpoint F9
+
+Debug configurations auf "Unnamed" setzen, bevor der Debugger gestarttet werden kann
 
 
 ### My Changes
@@ -26,6 +36,9 @@ sidebar_label: intelliJ
 
 
 ## Shortcuts
+
+Open Recent Files
+> Ctrl + E
 
 Suche File
 > Shift+Shift
