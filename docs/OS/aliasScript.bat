@@ -78,7 +78,7 @@ REM doskey firefox3= start firefox
 REM doskey test1= start C:\Users\%username%\Desktop\new.txt
 
 doskey firefox= start C:\Users\%username%\Desktop\firefox.lnk
-doskey firefox2= start C:\Users\%username%\Desktop\settings.lnk
+doskey firefox2= start C:\Users\%username%\Desktop\Files\settings.lnk
 
 :: Other useful shortkeys, linux inspired
 
