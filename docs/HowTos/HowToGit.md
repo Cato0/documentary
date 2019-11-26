@@ -119,6 +119,13 @@ git stash list				# see list of all stashed files
 git stash apply stash@{0}	# reapply the saved stash
 git stash drop stash@{0}	# delete the saved stash
 
+Bei mehreren Stashes werden die alten verschoben
+1 Stash = @0
+Wenn man einen neuen Stash hinzufügt, wird der alte verschoben
+@0 -> @1
+@0 wird mit der neuen Änderung erstellt
+
+
 # Branches
 
 | *git branch	# See all Branches
