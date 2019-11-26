@@ -4,7 +4,6 @@ title: Git
 sidebar_label: Git
 ---
 
-
 # Normal Workday
 
 1. Checkout your own Branch
@@ -118,6 +117,7 @@ erstelle ein Lokales
 git stash					# stashes changes
 git stash list				# see list of all stashed files
 git stash apply stash@{0}	# reapply the saved stash
+git stash drop stash@{0}	# delete the saved stash
 
 # Branches
 
