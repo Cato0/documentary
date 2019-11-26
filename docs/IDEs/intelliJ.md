@@ -58,6 +58,12 @@ Next / Previous Tab
 Comment Line
 > Ctrl + /
 
+Beautify Code
+> Strg + Alt + L
+- benötigt ein infocus Schema XML, was in Confluence heruntergeladen werden kann
+- https://confluence.adesso.de/display/LOT/in%7CFOCUS+Code-Konventionen
+    - download "infocus_vX_javadoc.xml"
+
 ## Git
 
 ## Usual Push Pattern
