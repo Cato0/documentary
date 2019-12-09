@@ -1033,6 +1033,19 @@ Delete:
 
     var x = "1".repeat(3);  # => "111"
 
+
+## Functional Programming; Map, 
+
+
+
+## Regex
+
+### Replace(regex, replacementString)
+
+    var z = x.replace(/(?<=\D)(.*?)(?=\5)/,".");
+
+
+
 ######################################################################################
 
 # Clean Function with multiple Parameter #

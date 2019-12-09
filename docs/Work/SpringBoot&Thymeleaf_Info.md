@@ -4,8 +4,25 @@ title: SpringBoot
 sidebar_label: SpringBoot
 ---
 
-# th - Commands
+# Thymeleaf - Commands
 
+
+
+## Call a Function
+
+TODO
+
+## * vs. $
+
+> *{attributeName}
+
+    TODO
+
+
+> ${attributeName}
+
+    TODO
+    
 
 ## th:text
 
@@ -53,6 +70,7 @@ sidebar_label: SpringBoot
 ## th:readonly="*{customerLoggedIn}"
 
     <input type="text " placeholder="Antwort " name="answer" th:value="*{answer}" th:readonly="*{customerLoggedIn}">
+
 ## th:disabled
 
     <input type="text " placeholder="Antwort " name="answer" th:value="*{answer}" th:disabled="*{customerLoggedIn}">
@@ -63,4 +81,3 @@ sidebar_label: SpringBoot
     <a th:href="@{/register.html}" class="btn btn--s forward">Jetzt registrieren</a>
 
 
-    

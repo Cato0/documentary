@@ -64,6 +64,31 @@ Forced Fix:
     }
 
 
+# Grid
+
+    .ele {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);      /* 4 Elements per Row */
+        grid-gap: 0px;
+    }
+
+# nth-Child
+
+    <html>
+    <body>
+        <div class="btnContainer">
+        <button class="btn"><h4>0</h4></button>
+        <button class="btn"><h4>1</h4></button>
+        <button class="btn"><h4>2</h4></button>
+        <button class="btn"><h4>3</h4></button>
+        </div>
+    </body>
+    </html>
+
+    .btn:nth-child(2n) {    
+        background-color: gray;
+        break-after: always;
+    }
 
 # Color
 

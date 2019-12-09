@@ -7,6 +7,7 @@ sidebar_label: FirstSpirit
 # Neue Datei erstellen CMS
 
 
+ROT
 - neuer Ordner
     - neue Vorlage ()
     - nur die html-Form einfügen
@@ -18,14 +19,14 @@ sidebar_label: FirstSpirit
 GRÜN
 - im Ordner rechtsklick Absatz einfügen
     - !!! falls hier der falsche Ordner angezeigt wird folgendes:
-        - ROT Standardseite -> obige Reiter "Inhaltsbereiche"
+        - ROT Redaktionell/Standardseite -> Eigenschaften und der obige Reiter von "Inhaltsbereiche"
             -> Zugelassene Absatzvorlagen editieren:
             -> unten auf den Ordner neues hinzufügen und den richtigen Ordner auswählen
 
-
-
 - erstes mal Freigeben:
-    - ???
+
+Dann Attribute hinzufügen:
+-  ROT Formular und Regeln editieren
 
 
 ## Javascript File hinzufügen
@@ -37,6 +38,12 @@ GRÜN
         $CMS_END_IF$
     - im ROTEN File dann nur noch $CMS_SET(set_isBilderraetselLabeled,true)$ auf true setzen
 - 
+
+
+# Template
+
+Example:
+    $CMS_RENDER(template:"ft_winning_numbers_keno")
 
 
 # Tooltip erstellen:

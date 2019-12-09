@@ -38,6 +38,10 @@ Start from Command Line:
 
 - Strg + ,   = Option
 
+## Beautify Code
+
+- Shift + Alt + F
+
 ## Comment (Auskommentieren)
 
 - Toggle Line Comment

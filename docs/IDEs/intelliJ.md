@@ -26,7 +26,6 @@ sidebar_label: intelliJ
 
 Debug configurations auf "Unnamed" setzen, bevor der Debugger gestarttet werden kann
 
-
 ### My Changes
 
 1. git Pull
@@ -35,7 +34,18 @@ Debug configurations auf "Unnamed" setzen, bevor der Debugger gestarttet werden 
 2. something else
 
 
+## Unit Tests
+
+LTG-mvc Example:
+- e.g. RaffleComponentTest
+- links am Code neben der Klasse: Run Tests
+    - Tests können auch einzeln gestartet werden
+    - 
+
 ## Shortcuts
+
+Importieren
+> Alt + Enter und mit der Maus drüber
 
 Open Recent Files
 > Ctrl + E
@@ -57,12 +67,24 @@ Next / Previous Tab
 
 Comment Line
 > Ctrl + /
+> Ctrl + 7
+
+Show where a Function is called
+> Ctrl + Alt + F7
+
 
 Beautify Code
 > Strg + Alt + L
 - benötigt ein infocus Schema XML, was in Confluence heruntergeladen werden kann
 - https://confluence.adesso.de/display/LOT/in%7CFOCUS+Code-Konventionen
     - download "infocus_vX_javadoc.xml"
+
+
+Zeile dublizieren
+> Strg + D
+
+
+
 
 ## Git
 
