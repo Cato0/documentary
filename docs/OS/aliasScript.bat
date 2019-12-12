@@ -19,18 +19,18 @@ SET username=%USERNAME%
 
 :: Variables
 
-SET desk="C:\Users\%username%\Desktop\"
-SET files="C:\Users\%username%\Desktop\Files"
-SET workspaces="C:\Users\%username%\Desktop\Files\Workspaces"
-SET my="C:\Users\%username%\Desktop\myProjects\myGithub"
-SET doc="C:\Users\%username%\Desktop\myProjects\documentary"
-SET ent="C:\Entwicklung"
-SET projekte="C:\Projekte"
-SET myprojects="C:\Users\%username%\Desktop\myProjects\"
-SET angular="C:\Users\%username%\Desktop\myProjects\angularTestApp"
-SET uni="C:\Users\%username%\Desktop\myProjects\diatlogbot-vr-pepper\Code"
-SET now="C:\Projekte\relaunch-portal-sourcen\"
-SET test="C:\Users\%username%\Desktop\myProjects\"
+SET desk=C:\Users\%username%\Desktop\
+SET files=C:\Users\%username%\Desktop\Files
+SET workspaces=C:\Users\%username%\Desktop\Files\Workspaces
+SET my=C:\Users\%username%\Desktop\myProjects\myGithub
+SET doc=C:\Users\%username%\Desktop\myProjects\documentary
+SET ent=C:\Entwicklung
+SET projekte=C:\Projekte
+SET myprojects=C:\Users\%username%\Desktop\myProjects\
+SET angular=C:\Users\%username%\Desktop\myProjects\angularTestApp
+SET uni=C:\Users\%username%\Desktop\myProjects\diatlogbot-vr-pepper\Code
+SET now=C:\Projekte\relaunch-portal-sourcen\
+SET test=C:\Users\%username%\Desktop\myProjects\
 
 
 :: Create Script for my documentary to automatically add the header to Files and insert them into my doc Folder
