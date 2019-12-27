@@ -41,6 +41,21 @@ LTG-mvc Example:
 - links am Code neben der Klasse: Run Tests
     - Tests können auch einzeln gestartet werden
     - 
+- wenns nicht funktioniert vllt. vorher einen pull machen
+
+## Favorites
+
+### Add to Favorites
+
+    Shift + Alt + F
+
+### Open Favorite
+
+    Alt + 2
+
+### Delete From Favorite List
+
+    Click on the - in the Favorites Toolbar
 
 ## Shortcuts
 
