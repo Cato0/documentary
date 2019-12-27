@@ -60,7 +60,9 @@ doskey documentary= cd %doc%
 doskey ent= cd %ent%
 doskey env= cd %ent%
 
+doskey projekt= cd %projekte%
 doskey projekte= cd %projekte%
+doskey project= cd %projekte%
 doskey projects= cd %projekte%
 
 doskey myProjects= cd %myProjects%
