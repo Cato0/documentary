@@ -41,11 +41,34 @@ $("#x").append("<div>asd</div>");
 $("#x").remove();
 
 
-## Document Ready
+## Events
+
+### Document Ready
 
     $(document).ready(function () {
         ...
     }
+
+### Change-Value
+
+    $(.input1).change(function () {
+        ...
+    }
+
+### Other useful
+
+.keydown
+.keyup
+.mouseenter
+.mouseleave
+.focus
+.hover
+.click
+.scroll
+.load
+.resize
+.submit
+.blur
 
 
 ## CSS
@@ -79,3 +102,24 @@ x.html("asd")
 
 
     $('#my_div').myfunction();
+
+
+## Http-Request
+
+    
+
+    $.ajax({
+            url: '/api/autocomplete/address?plz=' + postCode,
+            type: 'GET',
+            contentType: 'application/json',
+            success: function (data) {
+                if(data) {
+                    $("#placeInput").val(data);
+                }
+            },
+            error: function (xhr, ajaxOptions, thrownError) {
+                //On error do this
+                console.log(xhr.status);
+                console.log(thrownError);
+            }
+        });

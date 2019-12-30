@@ -22,8 +22,12 @@ binding
 
 # Basic Commands
 
+	npm start
+
 	ng serve						# Start Server / App
 	ng test							# Start all Tests
+
+	ng serve --port 4401    		# Start Server on different Port / doesn't work with 'npm start'
 
 	ng new appName					# Create New Project
 	ng generate component compName	# Create new Component
@@ -81,6 +85,59 @@ in @NgModule
 
 #####################################################################################
 
+## Get Element By id with Angular
+
+.html
+
+	<p #mySpan>
+		get-element-by-id works!
+	</p>
+
+.ts
+
+	import {ElementRef, ViewChild} from '@angular/core';
+
+	export class GetElementByIdComponent implements OnInit  {
+
+	@ViewChild('mySpan') mySpan: ElementRef;
+
+	ngOnInit () {
+		console.log(this.mySpan.nativeElement.innerHTML);
+	}
+	}
+
+## Get Element By ClassName with Angular
+
+.html
+
+	<p class="classImLookingFor">
+		get-element-by-class-name works!
+	</p>
+
+
+From the whole DOM
+
+.ts
+
+	document.querySelectorAll(".second");
+
+From the specific component
+
+.ts
+
+	import {ElementRef, Renderer} from '@angular/core';
+
+	export class NgClassComponent implements AfterViewInit {
+
+	constructor(private renderer: Renderer, private elem: ElementRef) {}
+
+	// Does not work with ngOnInit
+	ngAfterViewInit() {
+		let ele = this.elem.nativeElement.querySelectorAll('.classImLookingFor');
+		console.log(ele[0].innerHTML);
+	}
+
+
 # Directives
 
 - directives are instructions in the DOM
@@ -120,18 +177,19 @@ in @NgModule
 
 # ngFor #
 
-- create a List of <p> Elements
+	create a List of <p> Elements
 
-<p *ngFor="let i of arrayName">
-    For Loop {{i}}
-</p>
+	<p *ngFor="let i of arrayName">
+		For Loop {{i}}
+	</p>
 
-// arrayName: Array<number> = [1, 2, 3, 4]
-Result:
-For Loop 1
-For Loop 2
-For Loop 3
-For Loop 4
+	// arrayName: Array<number> = [1, 2, 3, 4]
+
+	Result:
+	For Loop 1
+	For Loop 2
+	For Loop 3
+	For Loop 4
 
 ######################################################################################
 
@@ -161,9 +219,9 @@ Only displays the Div if the variable "check" is true.
 
 # ngStyle
 
-<p [ngStyle]="{'background-color' : 'red'}">Styling</p>
-OR
-<p [ngStlye] = "{backgroundColor: getColor()}" >
+	<p [ngStyle]="{'background-color' : 'red'}">Styling</p>
+	OR
+	<p [ngStlye] = "{backgroundColor: getColor()}" >
 
 - second calls a Function getColor, to dinamically change the Background Color
 
@@ -171,14 +229,47 @@ OR
 
 # ngClass
 
-- dinamically add or remove Classes
+Dynamically add or remove Classes
+
+	<p [ngClass]="'first second'" #first>Style1</p>
+	<p [ngClass]="['first', 'second']">Style2</p>
+	<p [ngClass]="{'first': true, 'second': true, 'third': false}">Style3</p>
+	<!-- <p [ngClass]="stringExp|arrayExp|objExp">Style4</p> -->
+	<p [ngClass]="{'first' : callFunction()  }">Style4</p>
+	<p [ngClass]="{'first second third' : true}">Style5</p>
 
 ######################################################################################
 
 
 # Ng-Click / Button #
 
-	(click) = "functionName()"
+.html
+
+	<button (click) = "someFunction()">
+		Click Me!
+	</button>
+
+# ngSwitch
+
+.html
+
+	<div [ngSwitch]="variableName">
+		<p *ngSwitchCase="true">
+			eins
+		</p>
+
+		<p *ngSwitchCase="'string'">	<!-- Klammern in Klammern !!!	-->
+			zwei
+		</p>
+		
+		<p *ngSwitchCase="3">
+			drei
+		</p>
+	</div>
+
+.ts
+
+  variableName = "string";
 
 
 ######################################################################################
@@ -345,6 +436,5 @@ During an HTTP-Request
 # TODO
 
 - directives
-- ngSwitch
 - services
 - observables, subscriptions

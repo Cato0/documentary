@@ -16,6 +16,19 @@ sidebar_label: Sass
   - [Desktop Computer](#desktop-computer)
 - [SASS](#sass)
 
+# ! CSS Changes
+
+Changes the usual syntax:
+
+    .first {
+        background-color: black
+    }
+
+To now:
+
+    .first 
+        background-color: black
+
 # Sass
 
 - VSCode install Live Sass Compiler
