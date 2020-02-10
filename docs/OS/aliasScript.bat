@@ -40,7 +40,6 @@ SET test=C:\Users\%username%\Desktop\myProjects\
 :: Create Loop and put every variables into an array
 
 
-
 :: Doskeys
 
 doskey push="git add --all && git commit -m 'qwe' && git push"

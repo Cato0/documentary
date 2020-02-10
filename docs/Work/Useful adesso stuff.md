@@ -1,3 +1,14 @@
+# Time Conversions
+
+## To Local Time Conversion
+
+    <p> Signaturdatum: <span th:text="${#ltgDates.formatToLocalDate(receipt.signatureDate, 'dd.MM.yyyy, HH:mm:ss z')}">24.04.2019, 17:23:36</span></p>
+
+## systemDateToLocalDate(Date)
+
+    DateConverter#systemDateToLocalDate(Date)"
+
+
 # Plz -> Adresse
 
 https://ltg-infocus-test03.test-server.ag/api/autocomplete/address?plz=45883

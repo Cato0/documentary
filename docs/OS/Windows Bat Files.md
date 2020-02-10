@@ -4,6 +4,10 @@ title: WindowsBat
 sidebar_label: WindowsBat
 ---
 
+# Loops
+
+...
+
 # Examples
 
     @echo off

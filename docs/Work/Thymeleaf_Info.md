@@ -17,7 +17,6 @@ th:object
 
 ## * vs. $
 
-
 There is an important difference though: the asterisk syntax evaluates expressions on selected objects rather than on the whole context. That is, as long as there is no selected object, the dollar and the asterisk syntaxes do exactly the same.
 
 
@@ -49,6 +48,10 @@ There is an important difference though: the asterisk syntax evaluates expressio
 
     - sonst geht es auch mit globalen Variablen:
         - th:if="${customerLoggedIn}"
+        - th:if="!${customerLoggedIn}"
+
+
+
 
 TODO TEST this
 - um dies zu benutzen, mus man eine andere Funktion im Backend anwenden:
@@ -71,7 +74,12 @@ https://www.thymeleaf.org/doc/articles/springmvcaccessdata.html
 
     th:if="${#fields.hasErrors('ackAgb')}"
 
+    th:unless
 
+    z.B.
+
+        th:if="!${@authenticationService.isAuthenticated()}"
+    
 
 ## th:value
 
@@ -84,7 +92,7 @@ https://www.thymeleaf.org/doc/articles/springmvcaccessdata.html
     <input type="email" th:field="*{email}" placeholder="your@email" />
 
 - has different functionality depending on the html tag its inside
-- mit <input> ist es genauso wie th:value, außer das der name noch automatisch gesetzt wird
+- mit <input> ist es genauso wie th:value, außer das der th:name und th:id noch automatisch gesetzt werden
 
 
 ## th:readonly="*{customerLoggedIn}"
@@ -101,3 +109,24 @@ https://www.thymeleaf.org/doc/articles/springmvcaccessdata.html
     <a th:href="@{/register.html}" class="btn btn--s forward">Jetzt registrieren</a>
 
 
+## th:with
+
+Declare an HTML element with the th:with attribute.
+- creates local Variable
+
+
+
+## th:fragment & th:replace
+
+Baue Templates
+
+<div th:fragment="lastschrift (gamingInfo)" th:object="${gamingInfo}">
+    <Something>
+</div>
+
+Einbauen in ein anderes Modul:
+
+<div th:repalce="technisches/fragmente/spielinformationen :: lastschrift({$gamingInfo})">
+
+
+</div>

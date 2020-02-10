@@ -18,6 +18,16 @@ sidebar_label: intelliJ
         - Working Directory auswählen
         - Command Line: "clean, install"
 
+## Build
+
+Richtiges Maven Projekt auswählen und was zu tun ist
+e.g. ltg-web-mvc [clean, install]
+dann auf "Play"-Pfeil für einen "Run"
+
+1. ltg-parent
+2. ltg-web-mvc
+3. _ltg_debug.bat wieder starten
+
 ## Debugger
 
 - Umschalt + F9 (oben rechts der Käfer)

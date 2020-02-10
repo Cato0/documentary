@@ -7,6 +7,16 @@ sidebar_label: SpringBoot
 
 # SpringBoot
 
+
+## Struktur
+
+- alle @RequestMapping Seiten
+    - sind im ContentPageController
+
+- Unterteilt in
+    - 1. src/main/java      -> Java Klassen
+    - 2. src/main/webapp    -> .xml Files   / global-flow.xml
+
 ## Übertragen von POST Variablen zu einer anderen Seite
 
 1. Seite "A" hat eine <form method="post" action="seite2.html"> 
@@ -27,11 +37,11 @@ sidebar_label: SpringBoot
     - e.g. gewinnspiel-flow.xml
 
 
-# @Request Mapping - REST API ?
+## @Request Mapping - REST Controller/API
 
 - maps HTTP Requests to hander methods of MVC and REST controllers
 
-## GET
+### GET
 
     @RestController
 
@@ -62,7 +72,7 @@ sidebar_label: SpringBoot
     }
 
 
-### GET With Parameters
+#### GET With Parameters
 
     @RequestMapping(value = "/test/{spaPart1}/{spaPart2}/{spaPart3}", method = GET)
     public String test (@Validated @ModelAttribute(MODEL_ATTRIBUTE_WINNING_REQUEST) WinningRequestDTO winningRequest, BindingResult bindingResult, HttpServletRequest request, @PathVariable String spaPart1, @PathVariable String spaPart2, @PathVariable String spaPart3) {
@@ -72,7 +82,7 @@ sidebar_label: SpringBoot
     }
 
 
-## POST
+### POST
 
 
     @RequestMapping(params = "teaserWinningRequest" , value = "$[" + GEWINNABFRAGE + "]", method = POST)
@@ -99,3 +109,8 @@ sidebar_label: SpringBoot
             }
 //            return GEWINNABFRAGE;
         }
+
+
+### @RequestBody
+
+TODO
