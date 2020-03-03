@@ -130,3 +130,10 @@ Einbauen in ein anderes Modul:
 
 
 </div>
+
+
+## th:classappend
+
+    th:classappend='${isAdmin} ? class-name'
+
+    th:classappend="${#fields.hasGlobalErrors()} ? border-danger"

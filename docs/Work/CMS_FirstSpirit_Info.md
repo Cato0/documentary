@@ -51,6 +51,11 @@ Example:
 - CMS Braun - Datenquellen - Tooltips
     - Strg + n für neue Datei
 
+    - Schlüssel eingeben e.g. error.user.login.onlineidcheck.INVALID
+    - Wert eingeben     SomeString
+
+    - zurück auf Tooltips
+    - und Freigeben unter: rechtsklick auf Tooltipps und unter "Extras" und "Angezeigte Zeilen freigeben"
 
 # Create $CMS_VALUE
 	- In der Vorlage (Rot) -> Formular muss ein neues Element angelegt werden

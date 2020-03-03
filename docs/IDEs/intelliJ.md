@@ -110,6 +110,9 @@ Zeile dublizieren
 
 
 
+Go to Decleration
+
+> Strg + Alt + B
 
 ## Git
 
