@@ -6,7 +6,6 @@ sidebar_label: FirstSpirit
 
 # Neue Datei erstellen CMS
 
-
 ROT
 - neuer Ordner
     - neue Vorlage ()
@@ -14,6 +13,12 @@ ROT
     - rechtsklick neue Vorlage einfügen
         - DE e.g "Bilderrätsel"
         - Referenzname e.g. "st_bilderraetsel"
+
+1. Eigenschaften
+2. Formular - z.B. INPUT_DOM
+3. Regeln wo z.B. Attribute erstellt werden können?
+4. Schnipsel /
+5. html Code
 
 
 GRÜN
@@ -24,10 +29,30 @@ GRÜN
             -> unten auf den Ordner neues hinzufügen und den richtigen Ordner auswählen
 
 - erstes mal Freigeben:
+- SEPERATOR
+    => clean-space in between 2 elements
+    => can be inserted or deleted from Tree Element on the Left. Not necessary to include a $CMS_RENDER(...) inside the HTML
+
 
 Dann Attribute hinzufügen:
 -  ROT Formular und Regeln editieren
 
+# Beschriftungen
+
+Beschriftungen:
+- Schlüssel: z.B. error.gameprocessing.savedgame.changeName.invalidName
+- Wert: Text String
+- wie wird es dann im Code eingebunden?
+    - durch eine Backend Funktion:
+        - <th:block th:with="savedGameMessagePopup=${gamingInfo.retrieveAndDeleteSaveGameMessagePopup()}">
+        - <th:text="${savedGameMessagePopup.title}>
+
+Tooltips:
+- Tooltip-Überschrift
+- Identifier für die einbindende Seite
+    - z.B. cookie.googlemaps.note
+-> Dann im Roten:
+    - <CMS_PARAM name="p_param" value="cookie.googlemaps.note" />
 
 ## Javascript File hinzufügen
 
@@ -36,6 +61,9 @@ Dann Attribute hinzufügen:
         $CMS_IF(#global.pageContext["set_isBilderraetselLabeled"] != null && #global.pageContext["set_isBilderraetselLabeled"])$
         <script src="$CMS_REF(media:"bilderraetsel")$?v=$CMS_VALUE(#global.now.format("yyyyMMdd"))$"></script>
         $CMS_END_IF$
+
+    $CMS_SET(#global.pageContext["set_isPasswordStrengthRequired"], true)$
+
     - im ROTEN File dann nur noch $CMS_SET(set_isBilderraetselLabeled,true)$ auf true setzen
 - 
 
@@ -45,6 +73,7 @@ Dann Attribute hinzufügen:
 Example:
     $CMS_RENDER(template:"ft_winning_numbers_keno")
 
+    Klick Control + RENDER um direkt auf die Seite zu kommen
 
 # Tooltip erstellen:
 
@@ -78,6 +107,25 @@ WinSCP
 - Log File
     - /opt/jboss/5.2.0-eap/server/infocus1a/log/infocus-logfile.log
 
+## CMS_FUNCTION
+
+
+    	<CMS_FUNCTION name="Navigation" resultname="fr_ft_mainNavigation">
+            <CMS_PARAM name="expansionVisibility" value="all"/>
+            <CMS_PARAM name="wholePathSelected" value="1"/>
+            <CMS_PARAM name="suppressEmptyFolders" value="1"/>
+            <CMS_VALUE_PARAM name="root" value="fr_ft_navRoot"/>
+
+        </CMS_FUNCTION>
+
+## CMS_ARRAY_PARAM
+
+		<CMS_ARRAY_PARAM name="innerBeginHTML">
+			<CMS_ARRAY_ELEMENT index="0"><![CDATA[$--
+
+            </CMS_ARRAY_ELEMENT>
+		</CMS_ARRAY_PARAM>
+        
 ## With
 
     	<div class="col-md-10 mobile-padding" th:with="result = ${@lottoHistogrammComponent.getResult(param.glueckszahl)}"> 

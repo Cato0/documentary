@@ -19,3 +19,7 @@
 ## Inspect Element
 
     Strg + Shift + C
+
+## Quellcode anzeigen
+
+    Strg + U

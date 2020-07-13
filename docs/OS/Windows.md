@@ -41,3 +41,10 @@ DOSKEY research=cd %USERPROFILE%\Dropbox\Research\
 
 
 C:\Projekte\LTG\ltg-core-legacy\sourcen-core\libs\core\bankcode.jar
+
+
+# Shortkeys
+
+- Win + D = Desktop
+- Win + P = Projektor
+- Strg + Alt + Up+Up / Down + Down = Turn screen up side down

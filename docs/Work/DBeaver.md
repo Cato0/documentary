@@ -16,3 +16,10 @@ Identverfahren Code:
 - oben aktiver Katalog einstellen (gibt quasi die richtige DB an bzw. nur die richtigen Daten)
 - Test starten:
 	- alles markieren und Strg + Enter
+
+
+
+## Short Keys
+
+
+- F4 auf einem Projekt um deren Informationen anzuzeigen

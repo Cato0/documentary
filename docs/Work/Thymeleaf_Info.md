@@ -33,6 +33,15 @@ There is an important difference though: the asterisk syntax evaluates expressio
 
     <label th:text="#{subscription.type}">Type: </label>
 
+### Text + Variable
+
+    <p>Some Text before <span th:text="variableName"</span> Some text after <p>
+
+
+    - th:utext
+        - unescaped Text
+        https://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html#unescaped-text
+
 ## th:remove
 
     <li th:remove="all"><input type="radio" /> <label>Second Type</label></li>
@@ -49,6 +58,11 @@ There is an important difference though: the asterisk syntax evaluates expressio
     - sonst geht es auch mit globalen Variablen:
         - th:if="${customerLoggedIn}"
         - th:if="!${customerLoggedIn}"
+
+## th:action
+
+- some kind of link
+- similar to html <form> 
 
 
 
@@ -137,3 +151,24 @@ Einbauen in ein anderes Modul:
     th:classappend='${isAdmin} ? class-name'
 
     th:classappend="${#fields.hasGlobalErrors()} ? border-danger"
+
+
+# Javascript in Thymeleaf
+
+https://stackoverflow.com/questions/26526037/javascript-function-call-with-thymeleaf
+
+
+
+
+# Errors (Adesso)
+
+
+1. 
+
+
+
+2. Warning
+
+    <div class="warning" th:if="${#fields.hasErrors('ackNoGameCommunity')}">
+        <p th:errors="*{ackNoGameCommunity}">Error Message.</p>
+    </div>

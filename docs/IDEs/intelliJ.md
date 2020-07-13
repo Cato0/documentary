@@ -108,8 +108,6 @@ Beautify Code
 Zeile dublizieren
 > Strg + D
 
-
-
 Go to Decleration
 
 > Strg + Alt + B
@@ -133,3 +131,45 @@ Git push
 
 Git commit
 > Ctrl + K
+
+Control + S = hatch S = drones
+
+Control + QWE
+Shift + QWE
+Alt + QWE
+
+
+HOW TO IMPROVE:
+- sending worker to gas 
+- making units
+- make creep
+
+
+- Control Group 4 = 4 + something else?
+    - e.g. S
+    - Leertaste
+    - Mouse Button
+    -             
+
+Making UNits:
+
+- 4seeeeee +     Control+Mouse click on eggs     +  add to control group
+
+- str or shift + something = MORPH INTO ONE
+
+- Strg + s = 4 
+- s = drone
+
+-> Strg + gedrückt halten = ???
+    -> IF it = Strg+s , s, s, s, s = DANN Success
+
+- make units = alt + 4 
+- NOTHING ELSE IS alt + 4 
+    - then only press that to make units
+
+
+- 4eeeeeee
+
+middle mouse Button??
+    - requires different mouse where its easier to do
+

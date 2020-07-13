@@ -86,6 +86,7 @@ doskey firefox2= start C:\Users\%username%\Desktop\Files\settings.lnk
 doskey ls= dir
 doskey .= cd .
 doskey ..= cd ..
+doskey ...= 'cd ..; cd ..'
 doskey open= start $1
 doskey mkfile= copy NUL $1.$2
 
