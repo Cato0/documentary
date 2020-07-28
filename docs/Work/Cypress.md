@@ -132,13 +132,20 @@ Cypress:
 
 # Debugging
 
-- cy.pause()
 
+    debugger
+    -> put this inside the Code and it will stop there
+
+Alternatively:
+- cy.pause()
 - include a pause in your code and then you can go through the different steps of the test
+
+- run only a single Test???
 
 # Selections
 
-    cy.contains('div', 'Phone Number')  // Find a Div, where the text is Phone Number
+    cy.contains('div', 'Phone Number')                 // Find a Div, where the text is containing the String "Phone Number"
+    cy.contains('div', new RegExp('Phone Number', 'g'))    // find where the text is EXACTLY 'Phone Number'    
     cy.find()
 
     Get the first Element of an Array
@@ -147,6 +154,28 @@ Cypress:
 
     - .eq(5)
     - .last()
+
+
+Find the first li descendent within a ul
+
+    cy.get('ul li:first').should('have.class', 'active')
+
+# Contains
+
+- Containing an exact String:
+    - to avoid ambiguities
+    cy.contains(new RegExp(yourString, "g"))
+
+    https://stackoverflow.com/questions/56443963/click-an-exact-match-text-in-cypress
+
+
+## .within
+
+    cy.get('form').within(() => {
+        cy.get('input').type('Pamela') // Only yield inputs within form
+        cy.get('textarea').type('is a developer') // Only yield textareas within form
+    })
+
 
 # Assertions / Should
 
@@ -166,6 +195,11 @@ Cypress:
 
     cy.wrap({ name: 'Jane Lane'})
 
+
+# Get
+
+    cy.get('input[name=username]').type('asde');
+    cy.get('input[type=submit]').click();
 
 # Buttons / Selects
 

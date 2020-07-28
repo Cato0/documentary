@@ -58,11 +58,13 @@ JBoss starten:
   service=CustomerManagement
 
 -> registerEPostidentCustomer
+ODER
+-> registerNewGiropayCustomer
 
 e.g.
 
 gen202053010114@wl-infocus-dev.adesso.de
-
+gen20206149314@wl-infocus-dev.adesso.de
 
 # Git Daten Herunterladen
 

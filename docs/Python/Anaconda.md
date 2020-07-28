@@ -35,3 +35,19 @@ deactivate                  # Goes back to the base environment
 
 dann alle Dateien starten mit:
     python fileName.py
+
+
+
+# Create Environment
+
+        conda create --name environment_name python=3.6
+
+
+# Export the Environment
+
+    conda env export > environment.yml
+
+
+# Recreate the environment
+
+    conda env create -f environment.yml

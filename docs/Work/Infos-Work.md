@@ -547,8 +547,27 @@ Dann auf Bereit und nochmal speichern
 
 http://testmx.adesso.de/roundcube/
 
+LTG:
 Benutzer: ltg-infocus-test
 Passwort: geheim
+
+Westlotto1:
+Benutzer: wl-infocus-test
+Passwort: geheim
+
+Westlotto2 - infocus:
+Benutzer: wl-infocus-inttest
+Passwort: geheim
+
+Westlotto3 - localhost
+Benutzer: wl-infocus-dev
+Passwort: geheim
+
+# Identifizierung abschließen
+
+- DBeaver anmelden
+- dann auf die DB gehen
+- dann den Status ändern
 
 # Iban Generator
 

@@ -1,3 +1,86 @@
+6,75
+21906
+
+# Cypress
+
+- Dominik? fragen welchen Account ich mit Cypress tests nutzen kann
+- wenn ich die Accountdaten z.B. gen202062093938@wl-infocus-inttest.adesso.de hochlade funktionieren die Zugangsdaten aus irgendeinem Grund nicht und die Tests schlagen fehl weil ich mich nicht einloggen kann
+
+
+
+Hey Dominik ich hatte mal eine Westlotto Frage. Habe gerade ein Probleme bei den Cypress Tests mich einzuloggen. Benutze normalerweise die folgende Email die ich in der JMX Console generiert habe: gen202062093938@wl-infocus-inttest.adesso.de. Auf infocus funktioniert die eigentlich auch aber wenn ich das hochlade geht das in der Jenkins Pipeline aber nicht und er kann sich bei den Tests nicht anmelden. Weißt du da vielleicht was oder gibt es andere Zugangsdaten die ich nehmen oder anders generieren kann die eventuell zum testen funktionieren könnten?
+
+
+## header.spec:
+
+    - Dauerspiel Link funktioniert nicht ???
+    - Registrierung funktionniert der letzte Schritt nicht außer man nicht die Exception weg in Commands 
+
+## meineRubbelBox
+
+- 
+
+## Sonstiges
+
+- Login File löschen?
+- Logout?
+- MeineDauertipps
+    - buyNormalTicket
+
+- Warenkorb und shoppingBasket 2 Sachen sollte es nicht geben
+
+- Rubbellose Seite
+    - ALLES in GAMING
+
+- ÄNDERE LOGIN Daten für InFocus
+    -> gen202062093938@wl-infocus-inttest.adesso.de
+
+- Spielscheine vervollständigen???
+- HOW TO confirm im logged in???
+
+- meineDaten
+    - FEHLER: Daten ändern nicht möglich weil die Bankdaten bereits von einem anderem Kunden benutzt wird
+    - "Daten ändern möglich?"
+
+- meine Spielhistorie
+    - ???
+
+- Login:
+    - welche Accountdaten kann ich benutzen, die nicht automatisch weg sind?
+
+- newsletter???
+
+- ALLES Fehler beim Anmelden
+    - welche Anmeldedaten soll ich benutzen?
+
+- Jenkins Fehler beheben? (Stand: 536 vom Montag 27.07)
+	Meine Daten -- Accordion aufklappbar funktioniert (failed)
+	MeineDauertipps -- Dauertipp kaufen und anzeigen (failed)
+	SpielHistorie -- Spielschein wird in Spielhistorie angezeigt (failed)
+	MeinKonto -- Datepicker, Datum bis sichtbar (failed)
+	MeinKonto -- Datepicker, Datum von sichtbar (failed)
+	MeinKonto -- DauertippAnnahmestelle navigierbar (failed)
+	MeinKonto -- Gewinnauszahlung navigierbar (failed)
+	Newsletter -- Links Funktionieren (failed)
+
+
+am 7.7 sagte ich noch 6-10 arbeitstage
+- bis in 2 Wochen (ca. 10)
+- 830 - 19?
+
+# cypress Ende
+
+
+# Masterarbeit
+
+- wie man BERT einsetzt ist euch (adesso) also dann relativ egal es geht eher um es gilt eher als FOrschungsthema
+
+# Masterarbeit Ende
+
+
+
+
+
 1. Statistiken
 2. Startseite
 3. Logout ? 
@@ -31,28 +114,11 @@ cypress/integration/Account/logout
 - Ada anschreiben?
 - Jürgen???
 
-Start:  8:30
-
-End:    16:30 / 17:00 Uhr
-
-Hallo Ada,
-
-ich wollte ja bald meine Masterarbeit anfangen und hatt dazu noch ein paar fragen wie das mit dem neuen Vertrag genau abläuft. Werde ich dann noch die 17 Stunden bei Lotto weiter machen und ich bin mir auch nicht sicher wie das genau aussieht wenn ich zwischendurch in der Uni arbeite, weil ich da auch noch einen Ansprechpartner habe, der mich bei meiner Masterarbeit unterstützt.
-
-ich bin Werkstudent hier und wollte einmal fragen wie das hier mit dem Urlaub buchen genau funktioniert. Kann man irgendwo nachschauen wie viele Tage man noch genau hat? Das weiß ich nämlich gerade gar nicht mehr vor allem da ich nicht sicher bin ob vom letzten Jahr noch was über ist oder ob das schon abgelaufen ist.
-Ich habe nur gesehen das es für Werkstudenten nicht über das UBW zu buchen ist. Da einfach meinene Chef fragen oder kannst du das vielleicht genauer sagen? Das wäre super.
-
-Mit freundlichen Grüßen
-
-AK
-
-
-- 
-
 
 t geht:
     - 1700
-
+j geht:
+    - 18Uhr (10:30 anfang)
 920 - 1620
 
 10 / 10

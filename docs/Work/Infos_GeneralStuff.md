@@ -1,20 +1,18 @@
+- TEAM CUP Voucher
+- email vom 07.07
+"die TEAM CUPs sind frisch in den Geschäftsstellen eingetroffen und können ab morgen (8. Juli) am jeweiligen adesso-Empfang gegen Abgabe eures Vouchers abgeholt werden. Bitte stürmt nicht alle gleichzeitig drauf los und achtet auf gebührenden Abstand. Es sind genug Goodies für alle adessi da. 😉
+Viel Spaß mit eurem persönlichen TEAM CUP!"
+
+- urbaub 8 Tage
+	- 28/29 Dezember
+	- August, September, Oktober, November für 6 Tage
+
+
 Relaunch Besprechnung
 	Dienstag: 10:15 - 10:30 Uhr
 	- NOW 11:00 - 11:15 Uhr
 
 	Montag 10:00 - 10:30Uhr
-
-
-in deiner infantilen Art
-
-
-Hallo Tanja,
-
-ich bin seit kurzem studentischer Mitarbeiter bei Adesso und plane hier meine Masterarbeit zu machen. Da es denke ich schon bald soweit ist mache ich mir so langsam Gedanken und habe ein paar Fragen dazu wie so etwas bei Adesso genau abläuft. Sind sie dafür die richtige Ansprechperson uns wurde ihr Kontakt als Ansprechpartner für studentische Mitarbeiter gegeben. Oder weißt du vielleicht an wen ich mich damit am besten wenden sollte?
-
-Viele Grüße
-
-André
 
 
 Lotto Thüringen (TSL - Thüringer Staatslotterie)
@@ -26,7 +24,7 @@ Arithnea
 - adess
 	- kümmert sich um funktionalität
 
-set_isBilderraetselLabeled
+
 
 An aktuelle Version
 Fixversion:
@@ -757,10 +755,17 @@ LTG:
 Benutzer: ltg-infocus-test
 Passwort: geheim
 
-Westlotto:
-Benutzer: ???
-Passwort: ???
+Westlotto1:
+Benutzer: wl-infocus-test
+Passwort: geheim
 
+Westlotto2 - infocus:
+Benutzer: wl-infocus-inttest
+Passwort: geheim
+
+Westlotto3 - localhost
+Benutzer: wl-infocus-dev
+Passwort: geheim
 
 # Iban Generator
 
@@ -853,6 +858,8 @@ Als studentische Mitarbeiterin, studentischer Mitarbeiter oder Praktikantin, Pra
 Bitte beachte: Der Urlaub ist nicht über UBW zu beantragen.
 
 Wie du den Urlaub beantragen kannst, findest du unter den Punkten „Urlaubsvergütung für Vergütungsverträge mit Stundengehältern" bzw. „Urlaubsvergütung für Vergütungsverträge mit Monatsgehältern".
+
+- https://studierende.adesso.de/portal/student/urlaub/uebersicht
 
 Krankmeldung:
 

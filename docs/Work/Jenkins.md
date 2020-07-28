@@ -8,10 +8,12 @@ Jenkins deployed nur Sachen im Backend
     - YES SERVER_DEBUG 
     - "Features (aktuell DSC) kommen nur in den master (4.3.28.x), so dass diese nicht ausgeliefert werden."
     
-Manuelles anstoßen
-- 
-- 
-- 
+Manuelles anstoßen vom Jenkins
+- ???
+
+
+Westlotto / Cypress:
+- http://wl-integration-test01.test-server.ag:8080/job/Westlotto/job/westlotto.de-integration-cypress-homepage/
 
 # Anmeldedaten
 
