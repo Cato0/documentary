@@ -1,26 +1,53 @@
-6,75
-21906
+# M
+
+
+Hallo Jürgen,
+
+ich wollte mal fragen ob wir nochmal wegen der Masterarbeit sprechen können.
+Habe jetzt schon ein bisschen was gemacht aber damit man gerade zu anfangs nicht in die falsche Richtung geht ist es wahrscheinlich gut nochmal darüber zu sprechen.
+
+Die genaue Themenspezifizierung ist noch nicht ganz klar. Ich habe das Bert netz jetzt mal etwas getestet ein Beispiel dafür gemacht mit pavlov Framework.
+Aber zum genauen Thema kann ich mir da was aussuchen? VORSCHLAG MACHEN
+ODER muss es dann eben relevant für adesso sein das es irgendwie zum Einsatz kommen kann?
+
+Viele Grüße
+
+A
+
+- arbeit findet eigentlich ja nur Zuhause statt
+- zusammenarbeit mit Jürgen und einem von der Uni
+- Jürgen anschreiben
+    - thema genau definieren
+    - Text Datensatz für BERT finden
+    - teilweise in der Uni arbeiten
+        - 
+
+18. kommt J wieder = nächste Woche
+d.h. ich habe die ein Woche um mich um alles zu kümmern
+- Overleaf vielleicht dem Jürgen schicken und gitlab Link
+- außerdem an den ... von der Uni
+- habe jetzt bisher in der Uni gearbeitet. So könnte das auch weitergehen oder 
+- inwieweit kriege ich unterstützung von irgendwem?
+    - ich mache sonst doch alles alleine
+    - falls ich Probleme mit BERT oder Tensorflow habe kann ich mich mit dem von der Uni beschäftigen
+        - hat es dann halt noch irgendwas mit adesso zu tun?
+
+Cypress Jenkins, kontoAufladen, Lastschrift CR 
+
+- morgen zum sven gehen und fragen was ich noch tun kann bzw. ob ich die nächste Zeit dann vllt hier auf der Arbeit für die Masterarbeit arbeiten kann.
+-> gerade um den Anfang zu finden ist es vielleicht ganz gut und braucht immer viel Zeit
+    -> oder sogar die ganze Zeit das halbes Jahr über?
+    -> übrigens wollte ich auch mal Urlaub nehmen in 2 Wochen. ich soll das ja nicht übers UBW buchen als Werkstudent sag ich dir dann einfach Bescheid oder muss ich das noch irgendwo eintragen oder so?
 
 # Cypress
 
-- Dominik? fragen welchen Account ich mit Cypress tests nutzen kann
-- wenn ich die Accountdaten z.B. gen202062093938@wl-infocus-inttest.adesso.de hochlade funktionieren die Zugangsdaten aus irgendeinem Grund nicht und die Tests schlagen fehl weil ich mich nicht einloggen kann
 
+- RubbelBox:
+    - 2. Tests gehen nur beim ersten Besuch
+        - wie soll das getestet werden?
 
+        - nach dem Kaufen einer Box kommt sie nicht direkt im selben Test in die Box zum auspacken???
 
-Hey Dominik ich hatte mal eine Westlotto Frage. Habe gerade ein Probleme bei den Cypress Tests mich einzuloggen. Benutze normalerweise die folgende Email die ich in der JMX Console generiert habe: gen202062093938@wl-infocus-inttest.adesso.de. Auf infocus funktioniert die eigentlich auch aber wenn ich das hochlade geht das in der Jenkins Pipeline aber nicht und er kann sich bei den Tests nicht anmelden. Weißt du da vielleicht was oder gibt es andere Zugangsdaten die ich nehmen oder anders generieren kann die eventuell zum testen funktionieren könnten?
-
-
-## header.spec:
-
-    - Dauerspiel Link funktioniert nicht ???
-    - Registrierung funktionniert der letzte Schritt nicht außer man nicht die Exception weg in Commands 
-
-## meineRubbelBox
-
-- 
-
-## Sonstiges
 
 - Login File löschen?
 - Logout?
@@ -66,7 +93,7 @@ Hey Dominik ich hatte mal eine Westlotto Frage. Habe gerade ein Probleme bei den
 
 am 7.7 sagte ich noch 6-10 arbeitstage
 - bis in 2 Wochen (ca. 10)
-- 830 - 19?
+- 9 - 16?
 
 # cypress Ende
 
@@ -113,6 +140,11 @@ cypress/integration/Account/logout
 - erste mal die Tests hochladen und
 - Ada anschreiben?
 - Jürgen???
+
+Start:  8:30
+
+End:    16:30 / 17:00 Uhr
+
 
 
 t geht:

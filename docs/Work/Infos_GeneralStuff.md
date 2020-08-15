@@ -798,8 +798,11 @@ NEUER = Stefan ...
 
 ...
 
+Marc Lorek
+- Leiter Line of Business Lottery
+
 Sven Gerding
-- Solution Center Leiter
+- Solution Center Leiter, Lottery Applications
 
 Stefan Drees (Felix Vorgesetzter)
 - Competence Center Leiter
@@ -809,20 +812,25 @@ Gutzeit Merle
 Theresa Ledermann
 
 Martin Höser
-- Projektleiter?
+- Projektleiter
 
 Sebastianos Mouratoglou
 Dominik Mohr
 André Firchow	- 	Design / Frontend Experte
 - 03.01
-Chris / 17.02
-Stefan Ziemke / 28.11
+Chris Terhaar / 17.02 (mitgelaufen)
+- Requirements Engineer
+Stefan Ziemke / 28.11 (vom ltg Projekt)
+Corinna Drescher
+- Requirements Engineer
 
 
 Westlotto
 - Freddy ??
 - Dominik ??
 - alexander Tommeus
+- chris
+- Corinna
 
 Bianca Batsch
 Niklas ...

@@ -120,13 +120,6 @@ https://arithnea.invisionapp.com/share/P6REHYVVQ52#/screens/360321798
 
 # 334
 
-
-Pfeile auf der Keno Seite noch einfügen
-
-
-Hi sorry @Du ich muss dich noch mal wegen den Pfeilen nerven. Diese sind gerade noch nicht zu sehen auf folgenden Seiten:
-
-
 - Pfeile sind in der mobilen Version weg
 - werden die nun wirklich gebruacht???
 

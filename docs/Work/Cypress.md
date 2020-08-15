@@ -259,6 +259,19 @@ e.g.
 
 
 
+# Wait / Pause / Stop
+
+- cy.wait(3000) // in ms
+
+cy.visit() sollte darauf warten das die Seite geladen ist bevor die nachfolgenden Funktionen gestartet werden
+Z.B. bei verlinkung auf eine andere Seite mit einem click() kann die Wartezeit abhelfen.
+
+
+
+# Child-Elements
+
+- elementA.children().contains('Something')
+- is very useful when you need something specific and the element exists multiple times
 
 # Page Object Pattern
 
