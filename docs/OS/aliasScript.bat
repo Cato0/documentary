@@ -29,7 +29,7 @@ SET projekte=C:\Projekte
 SET myprojects=C:\Users\%username%\Desktop\myProjects\
 SET angular=C:\Users\%username%\Desktop\myProjects\angularTestApp
 SET uni=C:\Users\%username%\Desktop\myProjects\diatlogbot-vr-pepper\Code
-SET master=C:\Users\%username%\Desktop\myProjects\myGithub\MASTERARBEIT
+SET master=C:\Users\%username%\Desktop\myProjects\masterarbeit
 SET now=C:\Projekte\relaunch-portal-sourcen\
 SET test=C:\Users\%username%\Desktop\myProjects\
 
@@ -98,7 +98,7 @@ REM doskey chrome2= start "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\
 
 :: doskey gac= "git add . && git commit -a -m "
 :: doskey overwrite = echo "Test">> "C:\Users\%username%\Desktop\batfile2.bat"
-:: doskey ov = call :app
+:: doskey ov = call :app    
 
 
 

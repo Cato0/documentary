@@ -1,10 +1,102 @@
-# M
+14.10 Mittwoch Treffen
+- Email vom 04.09
 
+0 10
+0 7
+
+
+# Masterarbeit
+
+TODO:
+
+1. choose topic
+2. get Data
+3. train bert model / fine tune
+4. Writing
+
+1. Topic
+Problems to solve:
+- Neural Machine Translation
+- Question Answering
+- Sentiment Analysis
+- Text summarization
+
+2. getData
+
+1. Jürgen fragen was für ein Thema gewählt werden kann. Falls es irgendwelche Daten bei adesso gibt mit denen ich arbeiten könnte
+    - sonst Wikipedia Daten
+
+
+- webDevelopment mit hineinbringen?
+- 
+
+when am i ready to contact Juergen?
+- wenn ich genau weiß was das Thema überhaupt ist?
+    - oder das noch absprechen und sagen ich habe ein bisschen getestet um zu sehen was so alles möglich ist deshalb steht das Thema noch nicht so richtig fest
+    - etwas mit DeepPavlov
+        - Text Extraction
+        - Text Classification
+        - Text Summation
+        - Goal Oriented Bot
+    - welche Daten habe ich / kann ich benutzen?
+    - Daten von adesso?
+
+- in welchem Context genau?
+    - 
+
+
+
+- goal oriented Bot
+    - wie unser Projekt mit Dialogbot
+    - offene Dialog halten
+    - 
+
+
+- text summation
+    - 
+
+
+zwischen 30 und 70 Seiten?
+- englisch
+- seit Oktober?
+
+- september - oktober
+- nov, dez, jan, feb, märz, april
+
+- genaue Themenspezifizierung
+    - Text summarization for:
+        ...
+
+- einlesen in BERT Paper
+- Tests machen und BERT IRGENDWO einsetzen
+- Tensorflow weiter lernen?
+- Colab || Jupiter benutzen
+
+
+- Tensorflow 1 oder 2 am besten?
+    - Tf2 officially available since Sep 2019
+    - warum also nicht TF2
+
+- gitlab anlegen für die Masterarbeit
+- Paper etc. schon mal anlegen
+    - Überschrift ausdenken
+        - Using BERT to create a general cognitive assistant for ...
+        - intend recognition
+
+- Sven sprechen
+
+- September bis 
+
+# Masterarbeit Ende
+
+
+# Ma - Talk
 
 Hallo Jürgen,
 
 ich wollte mal fragen ob wir nochmal wegen der Masterarbeit sprechen können.
 Habe jetzt schon ein bisschen was gemacht aber damit man gerade zu anfangs nicht in die falsche Richtung geht ist es wahrscheinlich gut nochmal darüber zu sprechen.
+
 
 Die genaue Themenspezifizierung ist noch nicht ganz klar. Ich habe das Bert netz jetzt mal etwas getestet ein Beispiel dafür gemacht mit pavlov Framework.
 Aber zum genauen Thema kann ich mir da was aussuchen? VORSCHLAG MACHEN
@@ -14,6 +106,24 @@ Viele Grüße
 
 A
 
+- ich habe schon gemacht:
+    - eingelesen, 
+    - mit dem Paper angefangen das grobe das man beim Arbeiten schon mal ein paar Sachen schreiben kann und Lücken füllt
+    - mich wieder mit Tensorflow und Tensorflow 2 auseinandergesetzt
+        - schon benutzt aber gut kenne ich mich damit nicht aus muss ich zugeben
+    - es ist halt eine Menge
+    - ich habe mich nochmal mit Colab / Jupiter und Tensorflow beschäftigt
+    - DeepPavlov benutzt für BERT fine tuning
+        - Dataset
+            - auch WIkipedia Seiten?
+    - WebScrapping mit Python damit man ja auch irgendwie an Daten kommt
+        - weil es dazu schon manchmal zu Problemen kommt Daten herauszusuchen
+        - selbst wenn es nur nicht gelabelte Daten sind, die wir wohl brauchen
+
+
+- wie man BERT einsetzt ist euch (adesso) also dann relativ egal es geht eher um es gilt eher als FOrschungsthema
+
+
 - arbeit findet eigentlich ja nur Zuhause statt
 - zusammenarbeit mit Jürgen und einem von der Uni
 - Jürgen anschreiben
@@ -22,8 +132,6 @@ A
     - teilweise in der Uni arbeiten
         - 
 
-18. kommt J wieder = nächste Woche
-d.h. ich habe die ein Woche um mich um alles zu kümmern
 - Overleaf vielleicht dem Jürgen schicken und gitlab Link
 - außerdem an den ... von der Uni
 - habe jetzt bisher in der Uni gearbeitet. So könnte das auch weitergehen oder 
@@ -42,7 +150,19 @@ Cypress Jenkins, kontoAufladen, Lastschrift CR
 # Cypress
 
 
-- RubbelBox:
+### Lastschrift
+
+- Beim Einloggen wird dem Kunden ein Popup zur Rücklastschrift angezeigt. Über den Button auf dem Popup kommt man zum Forderungsauszug. Wichitg: Es kann noch Popups geben, die vorher eingeblendet werden. Das Popup zur Rücklastschrift-Sperre kommt immer zum Schluss. (s. Spezifikation, UI46)
+- Der Kunde kann einen Spielschein in den Warenkorb legen. Auf der Warenkorb-Seite ist dann aber der "Jetzt kaufen"-Button diabled und es wird ein HInweis auf die offenen Forderungen angezeigt. (s. UI60)
+- Flyout Kundenbereich nach dem Login enthält einen Hinweis auf die offenen Forderungen unter dem aktuellen Kontostand. (s. UI59)
+- Kontoauszug (Mein Konto): Hier wird ein HInweis auf die offenen Forderungen angezeigt. Über den Link kommt man zum Forderungsauszug (s. UI57)
+- Forderungsauszug an sich entspricht der Spezifikation (s. UI45)
+- Konto aufladen (hier gibts einiges  , s. UI63, A111)
+    - Zahlungsmittel wählen: Lastschrift ist nicht auswählbar, hier erscheint ein HInweis auf die Rücklastschrift-Sperre
+    - Auf der Zahlungsmittel-Übersicht und den einzelnen Zahlungsseiten für Kreditkarte, Giropay und PayPal erscheint ein Hinweis, dass alle Einzahlungen mit den Schulden verrechnet werden.
+
+### RubbelBox:
+
     - 2. Tests gehen nur beim ersten Besuch
         - wie soll das getestet werden?
 
@@ -90,23 +210,7 @@ Cypress Jenkins, kontoAufladen, Lastschrift CR
 	MeinKonto -- Gewinnauszahlung navigierbar (failed)
 	Newsletter -- Links Funktionieren (failed)
 
-
-am 7.7 sagte ich noch 6-10 arbeitstage
-- bis in 2 Wochen (ca. 10)
-- 9 - 16?
-
 # cypress Ende
-
-
-# Masterarbeit
-
-- wie man BERT einsetzt ist euch (adesso) also dann relativ egal es geht eher um es gilt eher als FOrschungsthema
-
-# Masterarbeit Ende
-
-
-
-
 
 1. Statistiken
 2. Startseite
@@ -140,11 +244,6 @@ cypress/integration/Account/logout
 - erste mal die Tests hochladen und
 - Ada anschreiben?
 - Jürgen???
-
-Start:  8:30
-
-End:    16:30 / 17:00 Uhr
-
 
 
 t geht:

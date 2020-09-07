@@ -167,6 +167,11 @@ Pw:	system1
 	- Port:22
 	- benutzername: jboss/jboss
 
+	- wl-infocus-test01.test-server.ag
+	- Port:22
+	- benutzername: jboss/jboss
+
+
 	/home/jboss/ 
 	TODO
 

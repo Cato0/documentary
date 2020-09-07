@@ -758,6 +758,24 @@ json.load(x)
     vLine = file.readline()
 
 
+## Get Data from File (txt, CSV)
+
+    import pandas as pd
+
+    text = "testing"
+
+    filePath = { 'a' : 'a.txt', 'b' : 'b.txt'}
+
+    df_list = []
+
+    for source, filepath in filePath.items():
+        df = pd.read_csv(filepath, names=['sentence', 'label'], sep=',')            # sep = ';' for csv columns (nach rechts)
+        df['source'] = source                                                       # Add another column filled with the source name
+        df_list.append(df)
+
+    print(df_list)
+
+
 #######################################################
 
 # Organize Files
