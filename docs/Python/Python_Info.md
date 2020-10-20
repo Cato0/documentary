@@ -712,6 +712,30 @@ Code:
             super().__init__(x,y)         # Python 2: super(SubClass, self).__init__()
 
 
+## Static Method
+
+
+Static Method doesnt not receive an implicit first argument (self).
+It can either be called on a class or on an instance.
+
+Decorator:
+
+    class MyClass(object):
+        @staticmethod
+        def the_static_method(x):
+            print(x)
+
+        def trySomething(self, x):
+            print(x)
+
+    x = MyClass()
+
+    MyClass.the_static_method(2)
+
+    x.the_static_method(2)
+    x.trySomething(1)
+
+
 #######################################################
 
 # Slots #

@@ -1,11 +1,71 @@
-14.10 Mittwoch Treffen
-- Email vom 04.09
 
-0 10
-0 7
-
+S: 9:00 - 18:30?
 
 # Masterarbeit
+
+- Kurzfassung
+- Abbildungsverzeichnis
+- Tabellenverzeichnis
+- Abkürzungsverzeichnis
+    - API - Application programming interface
+    - IDE - integrated development environment
+    - JSON - JavaScript object notation
+    - KNN künstliches neuronales netz
+    - REST representational state transfer
+
+2x 2 Wochen urlaub
+- schon vorher einreichen
+
+
+- 1. anfang november
+    - 2. , 3. nov 9. , 10. Nov
+- 1. ende dezember
+    - 21. , 22. , 28. , 29.
+
+
+- jeden Tag 1h lesen + Doku
+- speziell für State of the Art
+    - das sollte mindestens 15 Seiten ausmachen
+    ca. 50 - 70 Seiten für Masterarbeit
+        - Bachelorarbeit Anforderungen waren 30 Seiten (ohne Bild oder sonstiges)
+        - meine Bachelorarbeit 58 Seiten mit Bilder, Inhaltverzeichnissen etc. (43 aufgelistete Seiten)
+        -> Meine Master 70 Seiten inklusiver Bilder und Inhaltsverzeichnissen etc.
+            - davon habe ich schon 38? mit einigen leeren Seiten
+
+- use pretrained model from Google
+    https://github.com/google-research/bert#pre-trained-models
+
+- all i have to do is fine tune the model for my specific purpose
+    - sentiment classification / text classification
+    - add layers to the model, add data to complete the training for my specific purpose (Fine Tuning)
+    - Train, Test, Evaluate
+
+
+TODAY:
+
+1 / 7
+
+905-1605
+
+- doc
+- write him
+- clean myGithub repo (for later)
+- sentiment classification
+    - text classification
+
+- get Dataset
+- create Vocabulary ?? (i could use standard Vocab of BERT)
+    - 
+
+-> Fine Tuning:
+    - strategy of using a mostly trained model
+    - you just add additional data and specify the direction in which the application should go towards
+
+
+-> QUESTION
+    - how much data does it take to get a good result for a BERT classifier?
+    - 
+
 
 TODO:
 
@@ -17,23 +77,48 @@ TODO:
 1. Topic
 Problems to solve:
 - Neural Machine Translation
-- Question Answering
+- (Context) Question Answering (SQuAD)
 - Sentiment Analysis
-- Text summarization
+- Text summarization / Extractive Summarization?
+- Text Ranking
+
+- text transformation
+    - text classification
+    - text summarization
+    - text ranking
+    - unterscheidung zwischen ??? und ???
+        - z.B. im Use Case von ???
+            - banking oder Lotto
+            - Nutzer Tickets:
+                - unterscheidung zwischen Frontend und Backend 
+                    - wohin sollte das Ticket gebracht werden?
+                    - Email 
+                        - pyOutlook
+
+something with 
+- customer service for one of our LOBS
 
 2. getData
 
 1. Jürgen fragen was für ein Thema gewählt werden kann. Falls es irgendwelche Daten bei adesso gibt mit denen ich arbeiten könnte
     - sonst Wikipedia Daten
+    - das fine tunen bruacht ja auch Daten
 
+
+- Deutsches BERT Model mit einer deutschen Dictionary
+
+
+
+- wikiPedia Dump?
 
 - webDevelopment mit hineinbringen?
-- 
+    - probably not
 
 when am i ready to contact Juergen?
 - wenn ich genau weiß was das Thema überhaupt ist?
+        - zumindest Beispiele sagen
     - oder das noch absprechen und sagen ich habe ein bisschen getestet um zu sehen was so alles möglich ist deshalb steht das Thema noch nicht so richtig fest
-    - etwas mit DeepPavlov
+    - etwas mit DeepPavlov funktioniert?
         - Text Extraction
         - Text Classification
         - Text Summation
@@ -43,8 +128,6 @@ when am i ready to contact Juergen?
 
 - in welchem Context genau?
     - 
-
-
 
 - goal oriented Bot
     - wie unser Projekt mit Dialogbot
@@ -66,6 +149,9 @@ zwischen 30 und 70 Seiten?
 - genaue Themenspezifizierung
     - Text summarization for:
         ...
+    - text classification
+    - Question And Answering
+    - 
 
 - einlesen in BERT Paper
 - Tests machen und BERT IRGENDWO einsetzen
@@ -77,30 +163,87 @@ zwischen 30 und 70 Seiten?
     - Tf2 officially available since Sep 2019
     - warum also nicht TF2
 
-- gitlab anlegen für die Masterarbeit
 - Paper etc. schon mal anlegen
-    - Überschrift ausdenken
+    - Überschrift ausdenken (WIRD BENÖTIGT UM ES ANZFANGEN UND BEI DER HRW ANZUGEBEN)
         - Using BERT to create a general cognitive assistant for ...
         - intend recognition
 
-- Sven sprechen
+- mit Sven absprechen, auch wegen dem anderen Vertrag
 
-- September bis 
+- September bis februar ??
+    - oktober bis märz
+    - november bis april
 
 # Masterarbeit Ende
-
 
 # Ma - Talk
 
 Hallo Jürgen,
 
-ich wollte mal fragen ob wir nochmal wegen der Masterarbeit sprechen können.
-Habe jetzt schon ein bisschen was gemacht aber damit man gerade zu anfangs nicht in die falsche Richtung geht ist es wahrscheinlich gut nochmal darüber zu sprechen.
+ich wollte mal fragen ob wir nochmal wegen meiner Masterarbeit sprechen können.
+Habe jetzt schon was gemacht aber damit man nicht in die falsche Richtung geht ist es wahrscheinlich gut nochmal darüber zu sprechen.
+
+ER:
+- wie ist denn der jetzige stand:
+ICH: 
+- Doku hab ich schon fast 30 Seiten geschrieben State of the Art, Einleitung, Motivation usw.
+- jetzt nur der praktische Teil:
+    - ich habe versucht einige Frameworks zu benutzen um das BERT einsetzen zu können und habe jetzt Sentiment Analysis, Text Klassifikation
 
 
-Die genaue Themenspezifizierung ist noch nicht ganz klar. Ich habe das Bert netz jetzt mal etwas getestet ein Beispiel dafür gemacht mit pavlov Framework.
+-  musste vorher ja noch ein paar andere uni sachen fertig kriegen
+
+
+- WAS WILL ICH VON IHM?
+    - Kontakt zu sascha oder christian, einer in Frankfurt machen und mir helfen?
+    - adesso Daten?
+    - Question Answering Bot
+    - eventuell unterstützung bei der Implementierung ... Nicht so ganz einfach.
+
+- Gitlab Repo wo man immer mal drauf gucken kann weiß nicht ob du das auch machen willst? Bruache ich auf jeden Fall für meinen Professor
+
+- ich hatte erst ansätze von Deeppavlov und Question Awnsering gedacht aber je mehr ich in das Thema reingehe desto mehr denke ich das ist nicht das richtige.
+    - es  ist ja echt eher ein offenes Fragen beantworten nicht spezialisiert 
+    - ich hatte irgendwie an einen bestimmten Use Case gedacht wo man die Antworten des Bots besser steuern kann
+        - aber das hat dann nicht mehr viel mit BERT QA zu tun sondern eigentlich nur Textklassifizierung (sentiment analysis) und die Antworten kann ich mir dann selber aussuchen und vorher aufschreiben
+    
+- und ich bin eigentlich immer noch offen für eine Themenänderung
+
+SENTIMENT ANALYSIS oder Text Classification
+- Text Classification ist der Oberbegriff, Sentiment Analysis nur ein Teilbereich davon
+- das habe ich vor zu machen mit BERT und kann entweder MEINE IDEEN ... machen oder wenn es vielleicht noch auf einen adesso Use Case passt wo man vielleicht genug Daten hat kann man das gerne noch darauf gehen
+
+- ich will analysieren um was für eine Art Text es sich handelt (Klassifizieren und dann irgendwas damit machen)
+- 
+
+
+- ich wollte ja vorher das Thema ... so angehen. Ich bin mir gar nicht mehr ganz so sicher noch kann man es ja ändern. Also ich weiß ja nicht ob ihr hier bei adesso von irgendwas eine Menge Daten rumliegen habt die man irgendwie auswerten kann. Sonst nehme ich z.B. Wikipedia Dump für ???
+
+- Telegram / Discord Bot erstellen wofür genau?
+    - Customer Support
+    - Something with Wikipedia?
+    - Telegram Wikipedia Bot
+    - 
+
+    - OUTLOOK
+    - emails analysieren und sortieren?
+
+Die genaue Themenspezifizierung ist noch nicht ganz klar. Ich habe das Bert netz jetzt mal etwas getestet ein Beispiel dafür gemacht mit pavlov Framework / FARM Framework um schon mal zu gucken was man damit alles machen kann.
+- Text Klassifizierung
+- 
+
+- Question / Answering Bot
+    - Discord or Something else?
+
+
+- OTHER Bots
+    - 
+
+
 Aber zum genauen Thema kann ich mir da was aussuchen? VORSCHLAG MACHEN
 ODER muss es dann eben relevant für adesso sein das es irgendwie zum Einsatz kommen kann?
+
+ich hatte jetzt einiges zu tun.
 
 Viele Grüße
 
@@ -250,10 +393,6 @@ t geht:
     - 1700
 j geht:
     - 18Uhr (10:30 anfang)
-920 - 1620
-
-10 / 10
-6,5 / 7
 
     - Jürgen Angele Competence Center Leiter 
         - CC B CON KI
@@ -297,6 +436,13 @@ sadface
 - $sadcattag
 - !
 
+spidersonneB00k
+
+for
+1Bookdesignsoundmute
+
+
+
 sadcattagsadcattagsadcattag
 
 
@@ -305,8 +451,6 @@ sadcattagsadcattagsadcattag
     - wie Urlaub buchen
         - einfach dem Sven schreiben?
         - Sven ist gerade selber im Urlaub
-
-- es ist kein richtiger th:object Kontext / Form da
 
 
 - lokal testen ob ich irgendwas ändern kann für meine Tickets
