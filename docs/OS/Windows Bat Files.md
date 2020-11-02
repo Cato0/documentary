@@ -39,7 +39,7 @@ sidebar_label: WindowsBat
 1. Create a .bat file and have some Doskey Commands or whatever in it
 2. Right Click CMD.exe go to "Properties -> Shortcut -> Target" or "Eigenschaften -> Verknüpfungen -> Ziel"
    1. insert after the current line the PATH of the created Batfile
-   2. e.g. %windir%\system32\cmd.exe /K C:\Users\andre\Desktop\batfile.bat
+   2. e.g. %windir%\system32\cmd.exe /K C:\Users\%USERNAME%\Desktop\myProjects\documentary\docs\OS\aliasScript.bat
 3. Now everytime CMD is called, you start the batfile beforehand, and insert all the Doskey Shortcuts
 4. Create "Verknüpfung" for CMD and put the link to Windows-R "Ausführen" Command e.g. "C:\Users\andre\Desktop\cmd.lnk"
 
