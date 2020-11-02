@@ -1,5 +1,10 @@
 
-S: 9:00 - 18:30?
+S: 8:55 - 18:30?
+- 3,5 / 9,5
+- 0 / 7,5
+- 
+- 
+- 
 
 # Masterarbeit
 
@@ -42,8 +47,6 @@ S: 9:00 - 18:30?
 
 
 TODAY:
-
-1 / 7
 
 905-1605
 
@@ -227,6 +230,12 @@ SENTIMENT ANALYSIS oder Text Classification
 
     - OUTLOOK
     - emails analysieren und sortieren?
+
+Benchmarking:
+- 
+- 
+- 
+
 
 Die genaue Themenspezifizierung ist noch nicht ganz klar. Ich habe das Bert netz jetzt mal etwas getestet ein Beispiel dafür gemacht mit pavlov Framework / FARM Framework um schon mal zu gucken was man damit alles machen kann.
 - Text Klassifizierung
