@@ -1,10 +1,44 @@
 
 S: 8:55 - 18:30?
-- 3,5 / 9,5
+- 6 / 9,5
 - 0 / 7,5
 - 
-- 
-- 
+
+Path of least resistance
+- for the job
+
+8  
+7
+6
+5
+4
+3
+2
+1
+    a, b, c, d, e, f, g, h
+
+
+Chess Annotation
+
+d4, d5, 
+dE4
+
+king, q(een), r(oock), k(night), b(ishop)
+
+pawns? What if 2 positions are possible?
+-> d3xe4
+-> f3xe4
+
+Ka3, Kc3, Kd2
+Kh3, Kf3, Ke2
+
+
+Von C1:
+
+Von F1 nach:
+Bd2, Bc3, Bb4, Ba5, 
+    B
+
 
 # Masterarbeit
 
@@ -17,7 +51,7 @@ S: 8:55 - 18:30?
     - JSON - JavaScript object notation
     - KNN künstliches neuronales netz
     - REST representational state transfer
-
+    - ...
 2x 2 Wochen urlaub
 - schon vorher einreichen
 
@@ -37,6 +71,7 @@ S: 8:55 - 18:30?
         -> Meine Master 70 Seiten inklusiver Bilder und Inhaltsverzeichnissen etc.
             - davon habe ich schon 38? mit einigen leeren Seiten
 
+
 - use pretrained model from Google
     https://github.com/google-research/bert#pre-trained-models
 
@@ -44,7 +79,6 @@ S: 8:55 - 18:30?
     - sentiment classification / text classification
     - add layers to the model, add data to complete the training for my specific purpose (Fine Tuning)
     - Train, Test, Evaluate
-
 
 TODAY:
 
