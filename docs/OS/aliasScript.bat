@@ -15,8 +15,7 @@ REM 	REM echo "Test"
 :: my personal Doskeys
 
 :: TODO Change Username
-@REM SET username=%USERNAME%
-SET username=Konhardt
+SET username=%USERNAME%
 
 :: Variables
 

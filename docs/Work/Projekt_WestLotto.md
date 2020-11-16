@@ -167,7 +167,7 @@ ich habe gemacht:
 - "Connect to Licence Server
   - https://license.adesso.local:8443/f92c9286-9fb2-467b-8eea-5bb93c52fc98
   - meine Email
-  
+
 
 
 # Datenbank
@@ -182,6 +182,11 @@ ich habe gemacht:
   - Diese infos müssen eingetragen werden auf der Datei:
       D:\JBoss\jboss-eap-6.3\standalone\configuration\standalone-dev.xml
         - datasource ändern an 2 stellen
+
+          Vorher:
+                  <connection-url>jdbc:log4jdbc:db2://localhost:50000/GAME:currentSchema=GAME;</connection-url>
+
+          Nachher:
                   <datasource jta="false" jndi-name="java:jboss/QUARTZDS" pool-name="QUARTZDS" enabled="true" use-ccm="false">
                     <connection-url>jdbc:log4jdbc:db2://wl-infocus-stag02.test-server.ag:50010/GAME_LIV:currentSchema=GAME;</connection-url>
                     <security>
@@ -197,7 +202,10 @@ ich habe gemacht:
 ### Konfiguration für dev
 
 flyway.properties
+  - D:\Projekte\infocus-git\basedir\config\common\properties\flyway.properties
 - habe ich aus der pom.xml auskommentiert
+  - D:\Projekte\infocus-git\sourcen-core\pom.xml (GLAUE DIESE POM?!)
+
 - ist nur für lokale Datenbank (localhost)
 
 Vorher:
@@ -258,6 +266,11 @@ Maven einbauen
 
     REM set INFOCUS_BASEDIR=D:\Projekte\Westlotto\infocus\trunk\basedir
     set INFOCUS_BASEDIR=D:\Projekte\Westlotto\infocus\basedir
+
+
+# FEHLER:
+
+- jrebel Lizenz
 
 
 # FEHLER - Datenbank
