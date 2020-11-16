@@ -8,8 +8,14 @@ sidebar_label: VSCode
 
 - Markdown All in One
 - Code Runner
-    - Edit the "Code-runner, executerMap" to change python version
-    - e.g. "C:\\Users\\nisys\\Anaconda3\\envs\\py37\\python.exe"
+    - File -> Preferences -> Settings -> Extensions -> RunCode
+    - Edit executerMap in settings.json to change python version
+    - e.g:
+        "code-runner.executorMap": {
+            ...
+            "python": "C:\\Users\\Konhardt\\Anaconda3\\python.exe",
+        }
+    
 - Debugger
 - Python
 - C/C++
@@ -32,6 +38,9 @@ Start from Command Line:
 
 > File  -> Preferences   -> Keyboard Shortcuts
 > Datei -> Einstellungen -> Tastenkombinationen
+
+- Strg + T = Search in Options especially for Plugins
+    - '#' löschen und '>' einfügen zum suchen
 
 - Strg + P   = Suche nach Datei
 - Strg + Shift + P   = Input Feld

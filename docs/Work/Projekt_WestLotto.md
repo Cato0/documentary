@@ -159,23 +159,16 @@ ich habe gemacht:
 - intelliJ Maven Configurations
 
 
-Hihi habe das Projekt jetzt endlich lokal aufgesetzt. Sorry hat etwas gedauert musste einige sehr merkwürdige Fehler beheben. Der nächste Schritt wäre dann neue hilfreiche Tests zu erstellen?
-Kann man sich da vielleicht irgendwo orientieren bei anderen Projekten? Das würde mich sehr helfen, so viel Erfahrung habe ich noch nicht damit Tests zu schreiben.
+# jRebel
 
-Der nächste Schritt wäre dann neue hilfreiche Tests zu erstellen?
+- download
+- start /bin/jrebel-activation.jar
+- "i already have a licence"
+- "Connect to Licence Server
+  - https://license.adesso.local:8443/f92c9286-9fb2-467b-8eea-5bb93c52fc98
+  - meine Email
+  
 
-
-Mart:
-Hey ich muss dich nochmal kurz nerven wegen ...
-
-WEG ??? Kannst du mir mal helfen hier das Westlotto Projekt aufzusetzen?
-
-Es sieht eigentlich ganz gut aus.
-- neue Java, Maven, jBoss Version
-- der Build ist durch gekommen
-- ich habe alles aus der Anleitung gemacht
-  - DB funktioniert noch nicht ganz glaube ich hier
-  - 
 
 # Datenbank
 

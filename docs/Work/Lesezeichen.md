@@ -1,11 +1,3 @@
-Sebastian:
-- Hey wollte übrigens nur mal sagen das ich beim Paragliding jetzt doch nicht mitkomme. Sorry für die späte Antwort hab gerade einiges am Hut.
-    - Aber bei der nächsten Gelegenheit mit dir oder der Gruppe versuche ich auf jeden Fall wieder dabei zu sein :D
-    - 
-Valerius:
-- Hey alte Socke wie gehts dir? Hoffe noch kein Corona eingefangen. Wie sehen eigentlich deine Pläne aus nach Malta zu ziehen gibt es die immernoch?
-
-
 - Email generator
 - iBan generator
 

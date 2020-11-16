@@ -29,15 +29,12 @@ sidebar_label: Git
 
 ## .gitconfig - Create Alias
 
-- look for your .gitconfig File at:
+- create or look for your .gitconfig File at:
 	- Windows on C:\Users\USERNAME
 
 	[user]
 		name = Konhardt, André
 		email = andre.konhardt@adesso.de
-
-	somethign else
-	test
 
 ### My Aliases
 

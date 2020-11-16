@@ -277,6 +277,12 @@ Example:
 	
 	path = dir + "\\" + "fileName.png"
 
+
+## pathlib
+
+    from pathlib import Path
+    p = Path("somePath/hello")
+
 # Import / Export
 
     import fileName

@@ -1,11 +1,38 @@
+WESTLOTTO PROJECT:
 
-S: 8:55 - 18:30?
-- 6 / 9,5
-- 0 / 7,5
+- standalone_konhardt ...
+    - meine Java Version hier geändert von jdk1.8.0_60 auf jdk1.8.0_271
+- standalone-dev die Datenbank Verbindung muss vielleicht geändert weden?
+- C:\Users\Konhardt\.m2
+    - settings.xml muss das passwort noch gesetzt werden
+        - (PW_BEI_JEMANDEM_ERFRAGEN)
+
+- JBoss Lizenz wird noch benötigt
+
+MAVEN VORHER:
+    C:/Program Files/JetBrains/IntelliJ IDEA 2020.2.3/plugins/maven/lib/maven3
+
+- DB2 installationsdatei gezippt unter:
+    - C:\Users\Konhardt\AppData\Local\Temp
+
+
+Start:
+8:45
+
+8:40 / 10
+
+Laufwerk D Formatieren:
 - 
 
-Path of least resistance
-- for the job
+
+
+Kh3
+vs
+Kh1
+- 
+
+Max: 1951
+now: 1897?
 
 8  
 7
@@ -18,7 +45,11 @@ Path of least resistance
     a, b, c, d, e, f, g, h
 
 
-Chess Annotation
+
+
+
+
+C Annotation
 
 d4, d5, 
 dE4
@@ -103,6 +134,21 @@ TODAY:
     - how much data does it take to get a good result for a BERT classifier?
     - 
 
+
+zusammen mit Christopher und Daniel in einem Büro
+- da wo sonst auch Sebastiano und Frederick (Fred) sitzen
+    - Christopher Krafft? 
+
+- ich bin da wo der TIM sonst sitzt
+- Carls Christoph
+
+- Christoph Moldenhauer !!!
+- Christoph Stoppe
+- Christoph Lusts
+
+- Daniel Maliga !!!
+- Daniel Frenzel
+- Daniel Hellmann
 
 TODO:
 
