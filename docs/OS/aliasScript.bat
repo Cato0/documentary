@@ -15,8 +15,8 @@ REM 	REM echo "Test"
 :: my personal Doskeys
 
 :: TODO Change Username
-SET username=%USERNAME%
 
+SET username=%USERNAME%
 :: Variables
 
 SET desk=C:\Users\%username%\Desktop\

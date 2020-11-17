@@ -1,5 +1,31 @@
 Cypress:
 
+# Install
+
+1. downlload:
+    https://bitbucket.adesso-group.com/projects/WL/repos/homepage-test-cypress/browse
+
+2. npm install
+    - oder npm install cypress
+
+3. Starten:
+    
+    GUI:
+    
+    npm run e2e:dev
+    npm run e2e:dev --env configFile=wl-infocus-test01.test-server.ag
+
+    CLI:
+
+    npx cypress run
+    npx cypress run --spec ./path/singleSpecFile.spec.js
+
+
+Testreport generieren:
+    
+    npx mochawesome-merge --reportDir results > mochawesome.json
+    npx mochawesome-report-generator mochawesome.json
+
 # Good to know / von Michael
 
 - eine Funktion die testet ob alles gerendert wird

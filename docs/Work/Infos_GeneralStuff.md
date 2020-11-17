@@ -842,6 +842,11 @@ Sven
 Nima ->Arithnea
 
 
+# Jährliche Mitarbeiter Gespräch
+- wie sieht die Führungskraft das was ich gemacht habe
+- wie sehe ich das mit dem Umgang der Führungskfraft usw ...
+- was meinst du steht noch an für die Zukunft?
+
 # Sonstiges
 
 bezahlt wird nur wenn alles transferiert ist

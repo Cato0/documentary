@@ -136,7 +136,20 @@ https://www.youtube.com/watch?v=INf7VKipMdQ
 	
 	X_{Adversarial} = X + \epsilon.sign(\nabla_{x}J(\theta,x,y) )
 
-	
+    \(D_{s}\)
+    => D_s
+
+# 
+
+- kleiner gleich
+    \le
+- größer gleich
+    \ge
+- Ungleich !=
+    \neq
+- 
+
+
 	
 # Footnote
 

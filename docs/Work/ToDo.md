@@ -1,3 +1,5 @@
+16.12. Weihnachtsfeier Online 18-20 Uhr
+
 WESTLOTTO PROJECT:
 
 - standalone_konhardt ...
@@ -16,10 +18,73 @@ MAVEN VORHER:
     - C:\Users\Konhardt\AppData\Local\Temp
 
 
-Start:
-8:45
+1. bert auf den testdaten benutzen
+2. bert auf anderen daten testen
+3. bert auf deutschen daten trainieren und testen
 
-8:40 / 10
+
+
+Open Question:
+
+- how much fine tuning data is required to be state of the art?
+- for BERT
+    - for ALBERT
+    - for RoBERTa
+
+
+MOTIVATION:
+Using BERT or other similar architectures in a practical and commercial environment requires a specific amount of data to be viable. Even though the transfer learning effect of networks like BERT help to reduce the mass of data that is required but especially for a commercial scenario it is often the question can this technology be used for a specific use case where X amount of data exists. This work tries to look at the different BERT algorithms to give an approximate answer on how much data is required to solve a problem with BERT, so that businesses have an easier time calculating the rate of success for a project.
+
+
+BERT
+
+1. NLP
+    - next sentence prediction
+    - masked LM
+
+
+
+
+Start:
+845 1545
+
+6.5 7
+Masterarbeit masked language modelling, Doku
+
+
+FrDe
+- e4, d6, d
+- pwn point towards K
+- goal is to make him overextend, take away his pawns
+- wait until he developes his knight before attacking his pawn with f5?
+    - before that do g6 and bg7
+
+Gesamt:
+50-70 Seiten
+
+Introduction
+8 / 10 Seiten state of the art 
+
+Methoden / Implementation:
+15 Seiten
+
+Related Work:
+5 Pages
+
+Result / Conclusion:
+
+5 Seiten
+
+Future Work:
+1-2 Seiten
+
+
+
+
+
+chris
+- schon 15 Jahre hier bei adesso
+- senior dev
 
 Laufwerk D Formatieren:
 - 
@@ -113,8 +178,6 @@ Bd2, Bc3, Bb4, Ba5,
 
 TODAY:
 
-905-1605
-
 - doc
 - write him
 - clean myGithub repo (for later)
@@ -196,6 +259,11 @@ something with
 
 - webDevelopment mit hineinbringen?
     - probably not
+
+- ich bruache ja gar nicht so viel Hilfe ich mache das meiste in der Uni
+    - ich bruache aber ja normalerweise einen Ansprechpartner? 
+        - begleitperson?
+        - Betreuer !!!
 
 when am i ready to contact Juergen?
 - wenn ich genau weiß was das Thema überhaupt ist?
