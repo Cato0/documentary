@@ -9,7 +9,8 @@ Jenkins deployed nur Sachen im Backend
     - "Features (aktuell DSC) kommen nur in den master (4.3.28.x), so dass diese nicht ausgeliefert werden."
     
 Manuelles anstoßen vom Jenkins
-- ???
+- "Bauen mit Parametern"
+- UP ???
 
 
 Westlotto / Cypress:

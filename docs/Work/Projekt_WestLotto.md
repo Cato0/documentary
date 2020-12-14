@@ -137,11 +137,6 @@ https://confluence.adesso.de/pages/viewpage.action?pageId=173467948#Handbuchf%C3
 
 
 Probleme:
-S: 9
--> 16:00
-10/10
-6,66:/7
-
 
 - woran liegt es?
 
@@ -256,6 +251,14 @@ Maven einbauen
 - jetzt: C:\Users\konhardt\Downloads\apache-maven-3.3.1-bin\apache-maven-3.3.1
 
 
+Settings.xml
+
+- passwort ändern
+- PW_BEI_JEMANDEM_ERFRAGEN
+  -> ???
+
+
+
 # Fehler jBoss startet nicht
 
 - in der folgenden Datei muss noch ein Pfad geändert werden
@@ -271,6 +274,14 @@ Maven einbauen
 # FEHLER:
 
 - jrebel Lizenz
+
+
+# FEHLER
+
+- standalone-dev macht nichts
+  - geht einfach auf DRÜCKE BELIEBIGE TASTE und startet nichts
+
+-> 
 
 
 # FEHLER - Datenbank

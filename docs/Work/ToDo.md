@@ -1,3 +1,35 @@
+
+8:30 - ???
+
+Start:
+
+- factorio
+- gothic
+- psnow
+- warThunder
+
+2. Doc weiter schreiben
+3. Arbeit Lotto Projekt zum starten bringen
+4. Code schreiben für Masterarbeit
+    - Colab
+    - 
+
+9-18:30
+
+0 / 9:30
+0 / 7:30
+
+
+
+GOOGLE COLAB:
+
+free to use GPU
+- K80-GPU
+- 
+- PRO schnellere GPU, mehr speicherplatz
+    - Pro T4 - oder P100-GPU
+
+
 16.12. Weihnachtsfeier Online 18-20 Uhr
 
 WESTLOTTO PROJECT:
@@ -19,9 +51,8 @@ MAVEN VORHER:
 
 
 1. bert auf den testdaten benutzen
-2. bert auf anderen daten testen
+2. bert auf anderen Daten testen
 3. bert auf deutschen daten trainieren und testen
-
 
 
 Open Question:
@@ -48,7 +79,6 @@ BERT
 Start:
 845 1545
 
-6.5 7
 Masterarbeit masked language modelling, Doku
 
 
@@ -58,6 +88,8 @@ FrDe
 - goal is to make him overextend, take away his pawns
 - wait until he developes his knight before attacking his pawn with f5?
     - before that do g6 and bg7
+
+17:30Uhr
 
 Gesamt:
 50-70 Seiten
@@ -79,9 +111,6 @@ Future Work:
 1-2 Seiten
 
 
-
-
-
 chris
 - schon 15 Jahre hier bei adesso
 - senior dev
@@ -89,15 +118,8 @@ chris
 Laufwerk D Formatieren:
 - 
 
-
-
-Kh3
-vs
-Kh1
-- 
-
 Max: 1951
-now: 1897?
+now: 2010?
 
 8  
 7
@@ -110,15 +132,12 @@ now: 1897?
     a, b, c, d, e, f, g, h
 
 
-
-
-
-
 C Annotation
 
 d4, d5, 
 dE4
-
+#matt
+*schach
 king, q(een), r(oock), k(night), b(ishop)
 
 pawns? What if 2 positions are possible?
@@ -206,12 +225,8 @@ zusammen mit Christopher und Daniel in einem Büro
 - Carls Christoph
 
 - Christoph Moldenhauer !!!
-- Christoph Stoppe
-- Christoph Lusts
-
 - Daniel Maliga !!!
-- Daniel Frenzel
-- Daniel Hellmann
+
 
 TODO:
 
@@ -260,7 +275,7 @@ something with
 - webDevelopment mit hineinbringen?
     - probably not
 
-- ich bruache ja gar nicht so viel Hilfe ich mache das meiste in der Uni
+- ich brauche ja gar nicht so viel Hilfe ich mache das meiste in der Uni
     - ich bruache aber ja normalerweise einen Ansprechpartner? 
         - begleitperson?
         - Betreuer !!!
@@ -341,8 +356,25 @@ ICH:
 - jetzt nur der praktische Teil:
     - ich habe versucht einige Frameworks zu benutzen um das BERT einsetzen zu können und habe jetzt Sentiment Analysis, Text Klassifikation
 
-
 -  musste vorher ja noch ein paar andere uni sachen fertig kriegen
+
+- Betreuer für meine Abschlussarbeit:
+    - sie sagten mal ich könnte mich für den Betreuer meiner Masterarbeit an einem Sascha oder Christian melden
+    - können sie mir da vielleicht nochmal den genauen Kontakt geben?
+    - 
+
+
+Hallo Jürgen wir hatten vor einiger zeit schon mal gesprochen
+
+Es geht um meine Masterarbeit die in hier für adesso schreiben will zu dem Thema BERT und Chatbot funktionen. Sie sagten
+
+- können wir vielleicht nochmal kurz darüber sprechen?
+- ich bräuchte da noch einen offiziellen Betreuer und sie sagten mir mal 
+- es ist ein bisschen was dazwischen gekommen
+    - Uni Projekt das wegen Covid noch nach hinten geschoben wurde
+    - dann ist mir hier mein kompletter Rechner abgeschmiert mit der Masterarbeit wegen irgendeinem Festplattenfehler
+    - 
+
 
 
 - WAS WILL ICH VON IHM?

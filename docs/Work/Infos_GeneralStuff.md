@@ -876,6 +876,8 @@ Wie du den Urlaub beantragen kannst, findest du unter den Punkten „Urlaubsverg
 
 Krankmeldung:
 
+	https://krankmeldung.adesso.de/login
+
 	Bei Krankheit musst du so früh wie möglich (spätestens bis 10 Uhr) am betreffenden Tag telefonisch in der Dortmunder Zentrale Bescheid sagen, dass du nicht zur Arbeit erscheinst. Bitte gib auch die Namen der adesso-Mitarbeiter an, die über deinen Arbeitsausfall informiert werden sollen. Projektmitarbeiter sollen darüber hinaus die im Projekt zuständige Person über den Ausfall informieren.
 
 	Melde dich bitte nicht per E-Mail oder in den Sekretariaten der Geschäftsstellen (BER, FFM, CGN oder MUC) krank, sondern fernmündlich unter 0231 7000 7000 in Dortmund.

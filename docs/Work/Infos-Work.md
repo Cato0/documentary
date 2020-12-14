@@ -470,6 +470,11 @@ LOTTO Thueringen lokal ausführen
 		- ltg-infocus-test01.test-server.ag	: 22
 		- username: jboss/jboss
 
+BZW Schreibweise:
+
+	jboss@ltg-infocus-test01.test-server.ag
+	pw: jboss
+
 # JBoss
 
 ...
@@ -661,6 +666,8 @@ Wie du den Urlaub beantragen kannst, findest du unter den Punkten „Urlaubsverg
 
 Krankmeldung:
 
+	https://krankmeldung.adesso.de/login
+
 	Bei Krankheit musst du so früh wie möglich (spätestens bis 10 Uhr) am betreffenden Tag telefonisch in der Dortmunder Zentrale Bescheid sagen, dass du nicht zur Arbeit erscheinst. Bitte gib auch die Namen der adesso-Mitarbeiter an, die über deinen Arbeitsausfall informiert werden sollen. Projektmitarbeiter sollen darüber hinaus die im Projekt zuständige Person über den Ausfall informieren.
 
 	Melde dich bitte nicht per E-Mail oder in den Sekretariaten der Geschäftsstellen (BER, FFM, CGN oder MUC) krank, sondern fernmündlich unter 0231 7000 7000 in Dortmund.
@@ -684,3 +691,16 @@ an.kon menschTechnik7
 ## Welcome Day für Studierende
 
 https://intranet.adesso.de/human-resources/_layouts/15/WopiFrame.aspx?sourcedoc=/human-resources/Lists/OeffentlicheDokumente/Welcome%20Day%20Mappe%20f%C3%BCr%20Studenten.pdf&action=default&DefaultItemOpen=1
+
+
+
+GENERAL INFOS:
+
+- SLG - Sächsische Lotterie GmbH
+- TSL - Thüringer Staatslotterie
+- LTG - Lotto Thüringen
+- WL  - Westlotto
+
+
+https://www.sachsenlotto.de/portal/user/initportal.do
+https://www.lotto-thueringen.de
